@@ -10,9 +10,8 @@ const NavBar = () => {
       <nav>
         <Button text='HOME' link='/'/>
         <Separate />
-        <Button text='作品' link='/Items'/>
-        <Button text='研究' link='/Research'/>
-        <Button text='趣味' link='/Hobbies'/>
+        <Button text='About' link='/About'/>
+        <Button text='Works' link='/Works'/>
       </nav>
     </StyledNav>
   );

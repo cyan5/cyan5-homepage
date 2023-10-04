@@ -14,20 +14,20 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  height: 50px;
+  height: 10vh;
   background: #1a1a1a;
   /* margin: 0; */
 
   div{
-    width: 728px;
-    height: 50px;
+    max-width: 728px;
+    height: 10vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     
     button {
       position: absolute;
-      top: 5px;
+      top: 1em;
       left: 50%;
       transform: translate(-50%, 0%);
       font-size: 10pt;
@@ -41,10 +41,12 @@ const StyledFooter = styled.footer`
     p {
       position: absolute;
       right: 0;
-      bottom: 5px;
+      bottom: 0;
       font-size: 8pt;
       text-align: right;
+      color: #6f6f6f;
       margin: 0;
+      margin-bottom: 1em;
     }
   }
 `
