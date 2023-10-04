@@ -17,7 +17,7 @@ const About = () => {
         <StyledH2>シアン / cyan</StyledH2>
         <h2>Outline</h2>
         <p>
-          バックエンドに興味があり、現在はGoの学習をしています。就職までにRust、MySQLを学習予定です。
+          バックエンドに興味があり、現在はGoの学習をしています。修了までにRust、MySQLを学習予定です。
         </p>
         <h2>Skills</h2>
           <ul>
@@ -33,11 +33,7 @@ const About = () => {
             <li>2019年4月 東京工業大学 情報理工学院 入学</li>
             <li>2023年3月 東京工業大学 情報理工学院 情報工学系 卒業</li>
             <li>2023年4月 東京工業大学大学院 情報工学系 知能情報コース 入学</li>
-          </ul>
-        <h2>Affiliation</h2>
-          <ul>
-            <li><a href='http://www.sc.dis.titech.ac.jp/' target="_blank">石井研究室</a> (2022.4 ～)</li>
-            <li><a href='https://www.chorkleines.com/' target="_blank">東京工業大学混声合唱団コール・クライネス</a> (2019.4 ～ 2023.3)</li>
+            <li>2025年3月 東京科学大学大学院 情報工学系 知能情報コース(仮称) 卒業見込み</li>
           </ul>
         <h2>Links</h2>
           <ul>
