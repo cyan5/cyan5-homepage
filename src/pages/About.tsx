@@ -1,21 +1,21 @@
-// Works.tsx
+// About.tsx
 
 import Cover from "../components/Cover";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
 
-const Works = () => {
+const About = () => {
   return(
     <div>
       <NavBar />
       <Cover />
       <StyledContents>
-        <h1>This is Works Page.</h1>
+        <h1>This is About Page.</h1>
       </StyledContents>
       <Footer />
     </div>
   );
 };
 
-export default Works;
+export default About;

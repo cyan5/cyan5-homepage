@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './pages/App.tsx'
 // import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Foo from './pages/Foo.tsx'
 import { css } from '@linaria/core'
-import Items from './pages/Items.tsx'
+import Works from './pages/Items.tsx'
+import NotFound from './pages/NotFound.tsx'
+import About from './pages/About.tsx'
 
 export const globals = css`
   :global() {
@@ -38,8 +39,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Foo" element={<Foo />} />
-        <Route path="/Items" element={<Items />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Works" element={<Works />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
