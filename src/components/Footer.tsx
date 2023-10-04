@@ -6,11 +6,18 @@ const Footer = () => {
   return(
     <StyledFooter>
       <div>
-        <button>Back to Page Top</button>
+        <button onClick={() => backToTop()}>Back to Page Top</button>
         <p>This Website is produced by cyan.</p>
       </div>
     </StyledFooter>
   );
+};
+
+const backToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 
 const StyledFooter = styled.footer`
