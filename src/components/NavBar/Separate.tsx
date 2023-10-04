@@ -18,8 +18,8 @@ const StyledSeparate = styled.div`
   opacity: 0.5;
   margin-left: 10px;
   margin-right: 10px;
-  height: 50px;
-  line-height: 50px;
+  height: 8vh;
+  line-height: 8vh;
   padding: 0;
   display: block;
   float: left;
