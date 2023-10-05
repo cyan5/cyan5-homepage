@@ -17,7 +17,7 @@ const About = () => {
         <StyledH2>シアン / cyan</StyledH2>
         <h2>Outline</h2>
         <p>
-          バックエンドに興味があり、現在はGoの学習をしています。修了までにRust、MySQLを学習予定です。
+          バックエンドに興味があり、Goの学習をしています。修了までにRust、MySQLを学習予定です。
         </p>
         <h2>Skills</h2>
           <ul>
