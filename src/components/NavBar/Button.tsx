@@ -23,8 +23,8 @@ const StyledButton = styled.div`
   color: #cccccc;
   text-align: center;
   text-shadow: rgba(0,0,0,1) 0 0 6px;
-  height: 8vh;
-  line-height: 8vh;
+  height: 6vh;
+  line-height: 6vh;
   padding-left: 1em;
   padding-right: 1em;
   display: block;

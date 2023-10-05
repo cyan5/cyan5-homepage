@@ -21,12 +21,12 @@ const StyledNav = styled.div`
   position: fixed;
   background: rgba(0,0,0,0.2);
   width: 100%;
-  height: 8vh;
+  height: 6vh;
   backdrop-filter: blur(20px);
   /* padding-left: 200px; */
   
   nav {
-    height: 8vh;
+    height: 6vh;
     width: 728px;
     margin: auto;
     /* left: 50%; */
