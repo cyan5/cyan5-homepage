@@ -1,4 +1,4 @@
-// import './App.css'
+// import './Home.css'
 // import { Link } from 'react-router-dom'
 import { styled } from '@linaria/react'
 import Cover from '../components/Cover'
@@ -8,9 +8,9 @@ import Footer from '../components/Footer'
 import { StyledContents } from '../styles/StyledContents'
 import { Link } from 'react-router-dom'
 
-const App = () => {
+const Home = () => {
   return (
-    <StyledApp>
+    <StyledHome>
       <BigIcon />
       <NavBar />
       <Cover />
@@ -25,13 +25,13 @@ const App = () => {
         </div>
       </StyledContents>
       <Footer />
-    </StyledApp>
+    </StyledHome>
   )
 }
 
-const StyledApp = styled.div`
+const StyledHome = styled.div`
   background: white;
   color: #1f1f1f;
 `
 
-export default App
+export default Home

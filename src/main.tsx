@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './pages/App.tsx'
+import Home from './pages/Home.tsx'
 // import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { css } from '@linaria/core'
@@ -38,7 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Works" element={<Works />} />
         <Route path="*" element={<NotFound />} />
