@@ -6,6 +6,7 @@ import NavBar from '../components/NavBar'
 import BigIcon from '../components/BigIcon'
 import Footer from '../components/Footer'
 import { StyledContents } from '../styles/StyledContents'
+import { Link } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -18,9 +19,8 @@ const App = () => {
         <div>
           <h1>cyan's Homepage</h1>
           <ul>
-            <li><h2>About</h2></li>
-            <li><h2>Works</h2></li>
-            <li><h2>Blog</h2></li>
+            <li><Link to='/About'><h2>About</h2></Link></li>
+            <li><Link to='/Works'><h2>Works</h2></Link></li>
           </ul>
         </div>
       </StyledContents>
