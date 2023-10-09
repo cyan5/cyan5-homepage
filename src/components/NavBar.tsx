@@ -23,7 +23,7 @@ const StyledNav = styled.div`
   width: 100%;
   height: 6vh;
   backdrop-filter: blur(20px);
-  /* padding-left: 200px; */
+  padding-left: 15px;
   
   nav {
     height: 6vh;
