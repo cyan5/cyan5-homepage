@@ -18,11 +18,11 @@ const Works = () => {
           <WorkItem 
             img='src/images/DSC_0050.JPG' 
             title="cyan's Homepage" 
-            tags={['TypeScript', 'React']}/>
+            tags={['TypeScript + React']}/>
           <WorkItem 
             img='' 
             title='React World Weather' 
-            tags={['TypeScript', 'React']}/>
+            tags={['TypeScript + React']}/>
           <WorkItem 
             img='' 
             title='MoveItem' 
