@@ -4,7 +4,7 @@ import Home from './pages/Home.tsx'
 // import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { css } from '@linaria/core'
-import Works from './pages/Items.tsx'
+import Works from './pages/Works.tsx'
 import NotFound from './pages/NotFound.tsx'
 import About from './pages/About.tsx'
 
