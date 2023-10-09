@@ -17,7 +17,10 @@ const About = () => {
         <StyledH2>シアン / cyan</StyledH2>
         <h2>Outline</h2>
         <p>
-          バックエンドに興味があり、Goの学習をしています。修了までにRust、MySQLを学習予定です。
+          バックエンドエンジニアを目指してGoの学習をしています。修了までにRust、MySQLを学習予定です。
+        </p>
+        <p>
+          音楽が趣味で、よくピアノを弾いたり、パソコンで音楽を編集したりしています。
         </p>
         <h2>Skills</h2>
           <ul>
@@ -33,7 +36,7 @@ const About = () => {
             <li>2019年4月 東京工業大学 情報理工学院 入学</li>
             <li>2023年3月 東京工業大学 情報理工学院 情報工学系 卒業</li>
             <li>2023年4月 東京工業大学大学院 情報工学系 知能情報コース 入学</li>
-            <li>2025年3月 東京科学大学大学院 情報工学系 知能情報コース(仮称) 卒業見込み</li>
+            {/* <li>2025年3月 東京科学大学大学院 情報工学系 知能情報コース(仮称) 卒業見込み</li> */}
           </ul>
         <h2>Links</h2>
           <ul>
@@ -61,8 +64,10 @@ const StyledImage = styled.div`
   border-radius: 50%;
 `
 
-const StyledH2 = styled.h2`
+const StyledH2 = styled.div`
+  font-size: 20pt;
   text-align: center;
+  margin-top: 10px;
 `
 
 export default About;
