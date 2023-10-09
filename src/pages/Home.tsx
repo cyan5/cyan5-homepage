@@ -18,8 +18,8 @@ const Home = () => {
         <div>
           <h1>cyan's Homepage</h1>
           <ul>
-            <li><Link to='/About'><h2>About</h2></Link></li>
-            <li><Link to='/Works'><h2>Works</h2></Link></li>
+            <li><Link to='About'><h2>About</h2></Link></li>
+            <li><Link to='Works'><h2>Works</h2></Link></li>
           </ul>
         </div>
       </StyledContents>

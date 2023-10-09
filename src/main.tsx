@@ -38,10 +38,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Works" element={<Works />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/cyan5-homepage/" element={<Home />} />
+        <Route path="/cyan5-homepage/About" element={<About />} />
+        <Route path="/cyan5-homepage/Works" element={<Works />} />
+        <Route path="/cyan5-homepage/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

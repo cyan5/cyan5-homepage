@@ -8,10 +8,10 @@ const NavBar = () => {
   return(
     <StyledNav>
       <nav>
-        <Button text='HOME' link='/'/>
+        <Button text='HOME' link='/cyan5-homepage'/>
         <Separate />
-        <Button text='About' link='/About'/>
-        <Button text='Works' link='/Works'/>
+        <Button text='About' link='/cyan5-homepage/About'/>
+        <Button text='Works' link='/cyan5-homepage/Works'/>
       </nav>
     </StyledNav>
   );
