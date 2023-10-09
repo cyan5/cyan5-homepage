@@ -11,10 +11,9 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <StyledHome>
-      <BigIcon />
       <NavBar />
+      <BigIcon />
       <Cover />
-
       <StyledContents>
         <div>
           <h1>cyan's Homepage</h1>
