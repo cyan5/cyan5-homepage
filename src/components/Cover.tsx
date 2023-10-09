@@ -11,7 +11,7 @@ const Cover = () => {
 };
 
 const StyledCover = styled.div`
-  background-image: url(src/images/wallpaperbetter.com_7680x4320.jpg);
+  background-image: url(src/images/DSC_0050.JPG);
   background-size: cover;
   background-position: center;
   height: 50vh;
