@@ -9,4 +9,5 @@ import linaria from '@linaria/vite';
 export default defineConfig(() => ({
   // ...
   plugins: [linaria()],
+  base: 'cyan5-homepage'
 }));
