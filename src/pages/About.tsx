@@ -53,7 +53,7 @@ const StyledImage = styled.div`
   text-align: center;
   color: transparent;
   background: cyan;
-  background-image: url(src/images/cyan.png);
+  background-image: url('src/images/cyan.png');
   background-size: 100%;
   width: 200px;
   height: 200px;
