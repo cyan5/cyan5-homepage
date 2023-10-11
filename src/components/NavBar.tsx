@@ -28,7 +28,7 @@ const StyledNav = styled.div`
   
   nav {
     height: 6vh;
-    width: 728px;
+    width: 896px;
     margin: auto;
     /* left: 50%; */
     /* top: 50%; */
