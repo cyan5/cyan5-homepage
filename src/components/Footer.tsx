@@ -22,7 +22,7 @@ const backToTop = () => {
 
 const StyledFooter = styled.footer`
   height: 10vh;
-  background: #1a1a1a;
+  background: #1f353d;
   /* margin: 0; */
 
   div{
