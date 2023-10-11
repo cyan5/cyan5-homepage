@@ -21,7 +21,7 @@ const Works = () => {
             tags={['TypeScript + React']}/>
           <WorkItem 
             title='React World Weather' 
-            img='' 
+            img='src/images/reactworldweather.png' 
             tags={['TypeScript + React']}/>
           <WorkItem 
             title='MoveItem' 
