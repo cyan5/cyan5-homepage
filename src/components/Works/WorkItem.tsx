@@ -3,12 +3,12 @@
 import { styled } from "@linaria/react";
 
 type workItemType = {
-  img: string
   title: string
+  img: string
   tags: string[]
 }
 
-const WorkItem = ({ img, title, tags }: workItemType) => {
+const WorkItem = ({ title, img, tags }: workItemType) => {
   return(
     <StyledWorkItem>
       <img src={img} alt='image'/>
@@ -70,6 +70,7 @@ const StyledWorkItem = styled.li`
         flex-wrap: wrap;
         flex-direction: row;
         font-size: 8pt;
+        font-weight: bold;
         color: #555555;
         background: #dddddd;
         margin: 0px 4px 0px 0px;
