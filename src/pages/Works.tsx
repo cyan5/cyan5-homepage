@@ -16,48 +16,49 @@ const Works = () => {
         <h1>Works</h1>
         <StyledBox>
           <WorkItem 
-            img='src/images/DSC_0050.JPG' 
             title="cyan's Homepage" 
+            img='src/images/DSC_0050.JPG' 
             tags={['TypeScript + React']}/>
           <WorkItem 
-            img='' 
             title='React World Weather' 
+            img='' 
             tags={['TypeScript + React']}/>
           <WorkItem 
-            img='' 
             title='MoveItem' 
+            img='src/images/moveitem.png' 
             tags={['Powershell']}/>
           <WorkItem 
-            img='' 
             title='numer0n-search' 
-            tags={['C言語']}/>
-          <WorkItem 
             img='' 
+            tags={['C']}/>
+          <WorkItem 
             title='Multi-Agent-Simulation' 
+            img='' 
             tags={['Python']}/>
           <WorkItem 
-            img='' 
             title='' 
+            img='' 
             tags={[]}/>
           <WorkItem 
-            img='' 
             title='' 
+            img='' 
             tags={[]}/>
           <WorkItem 
-            img='' 
             title='' 
+            img='' 
             tags={[]}/>
           <WorkItem 
-            img='' 
             title='' 
+            img='' 
             tags={[]}/>
           <WorkItem 
-            img='' 
             title='' 
+            img='' 
             tags={[]}/>
           <WorkItem 
+            title='' 
             img='' 
-            title='' tags={[]}/>
+            tags={[]}/>
         </StyledBox>
       </StyledContents>
       <Footer />
