@@ -18,7 +18,7 @@ const Works = () => {
         <StyledBox>
           <WorkItem 
             title="cyan's Homepage" 
-            img='src/images/DSC_0050.JPG' 
+            img='src/images/DSC_0050.jpg' 
             tags={['TypeScript + React']}/>
           <WorkItem 
             title='React World Weather' 
