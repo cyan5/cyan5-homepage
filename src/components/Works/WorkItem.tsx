@@ -24,16 +24,24 @@ const WorkItem = ({ title, img, tags }: workItemType) => {
 
 const StyledWorkItem = styled.li`
   list-style: none;
-  width: 248px;
-  height: 186px;
-  margin: 4px;
+  /* width: 248px; */
+  width: calc(97% / 3);
+  margin: 0.5%;
+  height: 220px;
   border: 1.2px;
   border-style: solid;
   border-color: gray;
   border-radius: 10px;
   position: relative;
-
   cursor: pointer;
+
+  @media only screen and (max-width: 790px) {
+    width: calc(98% / 2);
+  }
+
+  @media only screen and (max-width: 540px) {
+    width: calc(99%);
+  }
 
   :hover {
     opacity: 0.8;
@@ -55,6 +63,7 @@ const StyledWorkItem = styled.li`
     border-radius: 0px 0px 8px 8px;
     padding: 6px 20px;
     margin: 0;
+    box-sizing: border-box;
 
     h4 {
       margin: 0;
