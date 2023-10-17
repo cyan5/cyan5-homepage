@@ -14,6 +14,7 @@ const Works = () => {
       <Cover />
       <StyledContents>
         <h1>Works</h1>
+        <h2>Products</h2>
         <StyledBox>
           <WorkItem 
             title="cyan's Homepage" 
@@ -35,30 +36,21 @@ const Works = () => {
             title='Multi-Agent-Simulation' 
             img='' 
             tags={['Python']}/>
-          <WorkItem 
+          {/* <WorkItem 
             title='' 
             img='' 
-            tags={[]}/>
+            tags={[]}/> */}
+        </StyledBox>
+        <h2>Hobbies</h2>
+        <StyledBox>
           <WorkItem 
-            title='' 
-            img='' 
-            tags={[]}/>
-          <WorkItem 
-            title='' 
-            img='' 
-            tags={[]}/>
-          <WorkItem 
-            title='' 
-            img='' 
-            tags={[]}/>
-          <WorkItem 
-            title='' 
-            img='' 
-            tags={[]}/>
-          <WorkItem 
-            title='' 
-            img='' 
-            tags={[]}/>
+              title='『いとおかし』耳コピ' 
+              img='' 
+              tags={['DTM']}/>
+          {/* <WorkItem 
+              title='' 
+              img='' 
+              tags={[]}/> */}
         </StyledBox>
       </StyledContents>
       <Footer />
