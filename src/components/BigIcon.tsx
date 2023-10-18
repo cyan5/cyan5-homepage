@@ -1,20 +1,19 @@
 // BigIcon.tsx
 
 import { styled } from "@linaria/react";
+// images
+import src_Cyan from '../images/cyan.png'
 
 const BigIcon = () => {
   return(
     <StyledBigIcon>
-      image
+      <img src={src_Cyan} alt='cyan.png' />
     </StyledBigIcon>
   );
 };
 
 const StyledBigIcon = styled.div`
-  text-align: center;
-  color: transparent;
   background: cyan;
-  background-image: url(src/images/cyan.png);
   background-size: 100%;
   position: absolute;
   left: 50%;
@@ -26,6 +25,12 @@ const StyledBigIcon = styled.div`
   border-style: solid;
   border-color: black;
   border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 `
 
 export default BigIcon;

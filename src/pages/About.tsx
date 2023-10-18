@@ -5,6 +5,8 @@ import Cover from "../components/Cover";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
+// images
+import src_Cyan from '../images/cyan.png'
 
 const About = () => {
   return(
@@ -13,7 +15,9 @@ const About = () => {
       <Cover />
       <StyledContents>
         <h1>About</h1>
-        <StyledImage>image</StyledImage>
+        <StyledImg>
+          <img src={src_Cyan} alt='cyan.png'/>
+        </StyledImg>
         <StyledH2>シアン / cyan</StyledH2>
         <h2>Outline</h2>
         <p>
@@ -49,12 +53,8 @@ const About = () => {
   );
 };
 
-const StyledImage = styled.div`
-  text-align: center;
-  color: transparent;
+const StyledImg = styled.div`
   background: cyan;
-  background-image: url('src/images/cyan.png');
-  background-size: 100%;
   width: 200px;
   height: 200px;
   border: 1px;
@@ -62,6 +62,13 @@ const StyledImage = styled.div`
   border-style: solid;
   border-color: black;
   border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 `
 
 const StyledH2 = styled.div`

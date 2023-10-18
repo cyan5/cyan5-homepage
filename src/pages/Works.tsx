@@ -6,6 +6,13 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
 import WorkItem from "../components/Works/WorkItem";
+// images
+import src_Fuji from '../images/DSC_0050.jpg' 
+import src_Weather from '../images/reactworldweather.png' 
+import src_MoveItem from '../images/moveitem.png' 
+
+import src_Itookashi from '../images/thumbnail2.png'
+import src_Kizuna from '../images/kizuna_thunbnail.png'
 
 const Works = () => {
   return(
@@ -18,33 +25,37 @@ const Works = () => {
         <StyledBox>
           <WorkItem 
             title="cyan's Homepage" 
-            img='src/images/DSC_0050.jpg' 
-            tags={['TypeScript + React']}/>
+            img={src_Fuji}
+            tags={['TypeScript + React', 'WebApp']}/>
           <WorkItem 
             title='React World Weather' 
-            img='src/images/reactworldweather.png' 
-            tags={['TypeScript + React']}/>
+            img={src_Weather}
+            tags={['TypeScript + React', 'WebApp']}/>
           <WorkItem 
             title='MoveItem' 
-            img='src/images/moveitem.png' 
-            tags={['Powershell']}/>
+            img={src_MoveItem}
+            tags={['Powershell', 'Shell']}/>
           <WorkItem 
             title='numer0n-search' 
             img='' 
-            tags={['C']}/>
+            tags={['C', 'Console']}/>
           <WorkItem 
             title='Multi-Agent-Simulation' 
             img='' 
-            tags={['Python']}/>
-          {/* <WorkItem 
-            title='' 
-            img='' 
-            tags={[]}/> */}
+            tags={['Python', 'Console']}/>
         </StyledBox>
         <h2>Hobbies</h2>
         <StyledBox>
           <WorkItem 
               title='『いとおかし』耳コピ' 
+              img={src_Itookashi} 
+              tags={['DTM', '動画制作']}/>
+          <WorkItem 
+              title='Google Chrome CM 初音ミク×Kizuna AI' 
+              img={src_Kizuna} 
+              tags={['動画制作']}/>
+          <WorkItem 
+              title='『香る樹葉花』耳コピ' 
               img='' 
               tags={['DTM']}/>
           {/* <WorkItem 
@@ -62,6 +73,7 @@ const StyledBox = styled.ul`
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
+  width: 100%;
   margin: 0;
   padding: 0;
 `

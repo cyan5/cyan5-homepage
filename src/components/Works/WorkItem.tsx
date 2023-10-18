@@ -24,8 +24,8 @@ const WorkItem = ({ title, img, tags }: workItemType) => {
 
 const StyledWorkItem = styled.li`
   list-style: none;
-  /* width: 248px; */
   width: calc(97% / 3);
+  /* width: 248px; */
   margin: 0.5%;
   height: 220px;
   border: 1.2px;

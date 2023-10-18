@@ -1,5 +1,4 @@
 // import './Home.css'
-// import { Link } from 'react-router-dom'
 import { styled } from '@linaria/react'
 import Cover from '../components/Cover'
 import NavBar from '../components/NavBar'
