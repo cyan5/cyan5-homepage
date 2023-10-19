@@ -5,14 +5,17 @@ import Cover from "../components/Cover";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
-import WorkItem from "../components/Works/WorkItem";
-// images
-import src_Fuji from '../images/DSC_0050.jpg' 
-import src_Weather from '../images/reactworldweather.png' 
-import src_MoveItem from '../images/moveitem.png' 
 
-import src_Itookashi from '../images/thumbnail2.png'
-import src_Kizuna from '../images/kizuna_thunbnail.png'
+// Works components
+import CyansHomepage from "../components/Works/CyansHomepage";
+import ReactWorldWeather from "../components/Works/ReactWorldWeather";
+import MoveItem from "../components/Works/MoveItem";
+import Numer0nSearch from "../components/Works/Numer0nSearch";
+import Itookashi from "../components/Works/Itookashi";
+import Comp005 from "../components/Works/Comp005";
+import Kizuna from "../components/Works/Kizuna";
+import KaoruJuyoka from "../components/Works/KaoruJuyoka";
+import MultiAgentSimulation from "../components/Works/MultiAgentSimulation";
 
 const Works = () => {
   return(
@@ -23,45 +26,18 @@ const Works = () => {
         <h1>Works</h1>
         <h2>Products</h2>
         <StyledBox>
-          <WorkItem 
-            title="cyan's Homepage" 
-            img={src_Fuji}
-            tags={['TypeScript + React', 'WebApp']}/>
-          <WorkItem 
-            title='React World Weather' 
-            img={src_Weather}
-            tags={['TypeScript + React', 'WebApp']}/>
-          <WorkItem 
-            title='MoveItem' 
-            img={src_MoveItem}
-            tags={['Powershell', 'Shell']}/>
-          <WorkItem 
-            title='numer0n-search' 
-            img='' 
-            tags={['C', 'Console']}/>
-          <WorkItem 
-            title='Multi-Agent-Simulation' 
-            img='' 
-            tags={['Python', 'Console']}/>
+          <CyansHomepage/>
+          <ReactWorldWeather />
+          <MoveItem />
+          <Numer0nSearch />
+          <MultiAgentSimulation />
         </StyledBox>
         <h2>Hobbies</h2>
         <StyledBox>
-          <WorkItem 
-            title='『いとおかし』耳コピ' 
-            img={src_Itookashi} 
-            tags={['DTM', '耳コピ']}/>
-          <WorkItem 
-            title='自作曲' 
-            img='' 
-            tags={['DTM', '作曲']}/>
-          <WorkItem 
-            title='Google Chrome CM 初音ミク×Kizuna AI' 
-            img={src_Kizuna} 
-            tags={['動画制作']}/>
-          <WorkItem 
-            title='『香る樹葉花』耳コピ' 
-            img='' 
-            tags={['DTM', '耳コピ']}/>
+          <Itookashi />
+          <Comp005 />
+          <Kizuna />
+          <KaoruJuyoka />
         </StyledBox>
       </StyledContents>
       <Footer />

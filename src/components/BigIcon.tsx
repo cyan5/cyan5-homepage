@@ -1,7 +1,6 @@
 // BigIcon.tsx
 
 import { styled } from "@linaria/react";
-// images
 import src_Cyan from '../images/cyan.png'
 
 const BigIcon = () => {
