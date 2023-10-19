@@ -47,21 +47,21 @@ const Works = () => {
         <h2>Hobbies</h2>
         <StyledBox>
           <WorkItem 
-              title='『いとおかし』耳コピ' 
-              img={src_Itookashi} 
-              tags={['DTM', '動画制作']}/>
+            title='『いとおかし』耳コピ' 
+            img={src_Itookashi} 
+            tags={['DTM', '耳コピ']}/>
           <WorkItem 
-              title='Google Chrome CM 初音ミク×Kizuna AI' 
-              img={src_Kizuna} 
-              tags={['動画制作']}/>
+            title='自作曲' 
+            img='' 
+            tags={['DTM', '作曲']}/>
           <WorkItem 
-              title='『香る樹葉花』耳コピ' 
-              img='' 
-              tags={['DTM']}/>
-          {/* <WorkItem 
-              title='' 
-              img='' 
-              tags={[]}/> */}
+            title='Google Chrome CM 初音ミク×Kizuna AI' 
+            img={src_Kizuna} 
+            tags={['動画制作']}/>
+          <WorkItem 
+            title='『香る樹葉花』耳コピ' 
+            img='' 
+            tags={['DTM', '耳コピ']}/>
         </StyledBox>
       </StyledContents>
       <Footer />
