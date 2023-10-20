@@ -21,7 +21,7 @@ const Works = () => {
   return(
     <div>
       <NavBar />
-      <Cover />
+      {/* <Cover /> */}
       <StyledContents>
         <h1>Works</h1>
         <h2>Products</h2>

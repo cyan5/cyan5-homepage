@@ -19,6 +19,7 @@ export const StyledWorkItem = styled.li`
 
   @media only screen and (max-width: 540px) {
     width: calc(99%);
+    margin: 7px 0.5%;
   }
 
   :hover {

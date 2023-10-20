@@ -20,7 +20,7 @@ const NavBar = () => {
 const StyledNav = styled.div`
   position: fixed;
   z-index: 10000;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.3);
   width: 100%;
   height: 6vh;
   backdrop-filter: blur(20px);

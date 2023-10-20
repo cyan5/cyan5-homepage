@@ -44,5 +44,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/cyan5-homepage/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

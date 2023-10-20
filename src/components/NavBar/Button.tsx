@@ -20,7 +20,7 @@ const Button = ({ text, link }: ButtonTextType) => {
 
 const StyledButton = styled.div`
   background: transparent;
-  color: #cccccc;
+  color: white;
   text-align: center;
   text-shadow: rgba(0,0,0,1) 0 0 6px;
   height: 6vh;
