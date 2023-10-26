@@ -17,21 +17,25 @@ import Comp005 from "../components/Works/Comp005";
 import Kizuna from "../components/Works/Kizuna";
 import KaoruJuyoka from "../components/Works/KaoruJuyoka";
 import MultiAgentSimulation from "../components/Works/MultiAgentSimulation";
-// import Details from "../components/Works/Detail";
+import Detail from "../components/Works/Detail";
 
 const Works = () => {
-  // const [showId, setShowId] = useState<number>();
+  const [showID, setShowID] = useState<boolean>();
+
+  const setShowIDNum = () => {
+    setShowID(!showID)
+  }
 
   return(
     <div>
       {/* <Cover /> */}
       <NavBar />
-      {/* <Details id={showId}/> */}
+      {showID && <Detail setShowIDNum={setShowIDNum}/>}
       <StyledContents>
         <h1>Works</h1>
         <h2>Products</h2>
         <StyledBox>
-          <CyansHomepage />
+          <CyansHomepage setShowIDNum={setShowIDNum}/>
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />
