@@ -19,7 +19,7 @@ const NavBar = () => {
 
 const StyledNav = styled.div`
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   background: rgba(0,0,0,0.3);
   width: 100%;
   height: 6vh;
@@ -28,7 +28,7 @@ const StyledNav = styled.div`
   
   nav {
     height: 6vh;
-    width: 896px;
+    width: 1000px;
     margin: auto;
     /* left: 50%; */
     /* top: 50%; */
