@@ -17,7 +17,7 @@ import Comp005 from "../components/Works/Comp005";
 import Kizuna from "../components/Works/Kizuna";
 import KaoruJuyoka from "../components/Works/KaoruJuyoka";
 import MultiAgentSimulation from "../components/Works/MultiAgentSimulation";
-import Detail from "../components/Works/Detail";
+import CyansHomepageD from "../components/Works/CyansHomepageD";
 
 const Works = () => {
   const [showID, setShowID] = useState<boolean>();
@@ -30,7 +30,7 @@ const Works = () => {
     <div>
       {/* <Cover /> */}
       <NavBar />
-      {showID && <Detail setShowIDNum={setShowIDNum}/>}
+      {showID && <CyansHomepageD setShowIDNum={setShowIDNum}/>}
       <StyledContents>
         <h1>Works</h1>
         <h2>Products</h2>

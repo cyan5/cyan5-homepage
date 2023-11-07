@@ -1,15 +1,14 @@
-// Detail.tsx
+// CyansHomepageD.tsx
 
 import { styled } from "@linaria/react";
 import src_Fuji from '../../images/DSC_0050.jpg' 
 
-type DetailType = {
+type CyansHomepageDType = {
   setShowIDNum: () => void
   // id: number | undefined
 }
 
-const Detail = ({ setShowIDNum }: DetailType) => {
-// const Detail = ({ id }: DetailType) => {
+const CyansHomepageD = ({ setShowIDNum }: CyansHomepageDType) => {
   return(
     <StyledDiv onClick={setShowIDNum}>
       <div>
@@ -88,4 +87,4 @@ const StyledDiv = styled.div`
   }
 `
 
-export default Detail;
+export default CyansHomepageD;
