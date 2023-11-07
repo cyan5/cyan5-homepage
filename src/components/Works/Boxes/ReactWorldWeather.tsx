@@ -1,7 +1,7 @@
 // ReactWorldWeather.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
-import src_Weather from '../../images/reactworldweather.png' 
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
+import src_Weather from '../../../images/reactworldweather.png' 
 
 const ReactWorldWeather = () => {
   return(

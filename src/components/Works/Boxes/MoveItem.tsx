@@ -1,7 +1,7 @@
 // MoveItem.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
-import src_MoveItem from '../../images/moveitem.png' 
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
+import src_MoveItem from '../../../images/moveitem.png' 
 
 const MoveItem = () => {
   return(

@@ -1,6 +1,6 @@
 // KaoruJuyoka.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
 const src_KaoruJuyoka = ''
 
 const KaoruJuyoka = () => {

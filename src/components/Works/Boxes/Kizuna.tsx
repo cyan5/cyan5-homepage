@@ -1,7 +1,7 @@
 // Kizuna.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
-import src_Kizuna from '../../images/kizuna_thunbnail.png'
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
+import src_Kizuna from '../../../images/kizuna_thunbnail.png'
 
 
 const Kizuna = () => {

@@ -1,7 +1,7 @@
 // Itookashi.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
-import src_Itookashi from '../../images/thumbnail2.png'
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
+import src_Itookashi from '../../../images/thumbnail2.png'
 
 const Itookashi = () => {
   return(

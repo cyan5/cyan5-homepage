@@ -1,13 +1,13 @@
-// CyansHomepage.tsx
+// CyansHP.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
-import src_Fuji from '../../images/DSC_0050.jpg' 
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
+import src_Fuji from '../../../images/DSC_0050.jpg' 
 
-type CyansHomepageType = {
+type CyansHPType = {
   setShowIDNum: () => void
 }
 
-const CyansHomepage = ({ setShowIDNum }: CyansHomepageType) => {
+const CyansHP = ({ setShowIDNum }: CyansHPType) => {
   return(
     <StyledWorkItem onClick={setShowIDNum}>
       <img src={src_Fuji} alt='image'/>
@@ -22,4 +22,4 @@ const CyansHomepage = ({ setShowIDNum }: CyansHomepageType) => {
   );
 };
 
-export default CyansHomepage;
+export default CyansHP;

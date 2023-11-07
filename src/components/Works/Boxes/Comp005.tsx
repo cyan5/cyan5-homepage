@@ -1,6 +1,6 @@
 // Comp005.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
 const src_Comp005 = ''
 
 const Comp005 = () => {

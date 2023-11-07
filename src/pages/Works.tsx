@@ -8,34 +8,34 @@ import { StyledContents } from "../styles/StyledContents";
 import { useState } from "react";
 
 // Works components
-import CyansHomepage from "../components/Works/CyansHomepage";
-import ReactWorldWeather from "../components/Works/ReactWorldWeather";
-import MoveItem from "../components/Works/MoveItem";
-import Numer0nSearch from "../components/Works/Numer0nSearch";
-import Itookashi from "../components/Works/Itookashi";
-import Comp005 from "../components/Works/Comp005";
-import Kizuna from "../components/Works/Kizuna";
-import KaoruJuyoka from "../components/Works/KaoruJuyoka";
-import MultiAgentSimulation from "../components/Works/MultiAgentSimulation";
-import CyansHomepageD from "../components/Works/CyansHomepageD";
+import CyansHP from "../components/Works/Boxes/CyansHP";
+import CyansHPD from "../components/Works/Details/CyansHPD";
+import ReactWorldWeather from "../components/Works/Boxes/ReactWorldWeather";
+import MoveItem from "../components/Works/Boxes/MoveItem";
+import Numer0nSearch from "../components/Works/Boxes/Numer0nSearch";
+import Itookashi from "../components/Works/Boxes/Itookashi";
+import Comp005 from "../components/Works/Boxes/Comp005";
+import Kizuna from "../components/Works/Boxes/Kizuna";
+import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
+import MultiAgentSimulation from "../components/Works/Boxes/MultiAgentSimulation";
 
 const Works = () => {
-  const [showID, setShowID] = useState<boolean>();
+  const [showCyansHP, setShowCyansHP] = useState<boolean>();
 
   const setShowIDNum = () => {
-    setShowID(!showID)
+    setShowCyansHP(!showCyansHP)
   }
 
   return(
     <div>
       {/* <Cover /> */}
       <NavBar />
-      {showID && <CyansHomepageD setShowIDNum={setShowIDNum}/>}
+      {showCyansHP && <CyansHPD setShowIDNum={setShowIDNum}/>}
       <StyledContents>
         <h1>Works</h1>
         <h2>Products</h2>
         <StyledBox>
-          <CyansHomepage setShowIDNum={setShowIDNum}/>
+          <CyansHP setShowIDNum={setShowIDNum}/>
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />

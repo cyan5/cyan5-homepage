@@ -1,6 +1,6 @@
 // Numer0nSearch.tsx
 
-import { StyledWorkItem } from "../../styles/StyledWorkItem";
+import { StyledWorkItem } from "../../../styles/StyledWorkBox";
 // import src_Numer0n from 
 const src_MoveItem = ''
 
