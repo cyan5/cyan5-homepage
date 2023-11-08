@@ -15,13 +15,24 @@ export const StyledWorkDetail = styled.div`
   margin: 0;
   
   div {
-    width: 80vh;
+    width: 800px;
     border-radius: 20px;
-    /* height: 80vh; */
-    margin: 12.5vh auto;
+    /* height: 60%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin: 0 auto; */
+    transform: translate(-50%, -50%);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     background: white;
     border-style: solid;
     border-color: rgb(160,160,160);
+
+    @media only screen and (max-width: 960px) {
+      width: 80vw;
+    }
 
     img {
       object-fit: cover;
@@ -36,27 +47,77 @@ export const StyledWorkDetail = styled.div`
     div {
       position: relative;
       width: 100%;
+      /* bottom: 0; */
       /* background: gray; */
       padding: 0.1px;
       margin: 0px;
       border-style: none;
+      transform: translate(-50%, 0);
       border-radius: 0px 0px 18.5px 18.5px;
 
-      div {
+      #date {
+        text-align: right;
         font-size: 10pt;
         position: absolute;
-        width: auto;
+        /* width: auto; */
+        top: 0;
         right: 2%;
         /* bottom: 10px; */
-        /* background: black; */
+        padding: 0% 3%;
       }
 
       h2 {
         text-align: center;
+        margin: 1em 0 0 0;
+      }
+
+      h4 {
+        padding: 0% 3%;
+        margin: 0;
       }
 
       p {
         padding: 0% 3%;
+        margin: 0;
+      }
+
+      #tags {
+        ul {
+          padding: 0% 3%;
+          li {
+            list-style: none;
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            font-size: 10.5pt;
+            font-weight: bold;
+            color: #555555;
+            background: #dddddd;
+            margin: 3px;
+            padding: 3px 6px;
+            border-radius: 6px;
+          }
+        }
+      }
+
+      #icon {
+        ul {
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          margin: 0 30px 0 0;
+          /* list-style: none; */
+          li {
+            text-align: center;
+            /* display: inline; */
+            margin: 15px;
+            width: 50px;
+            /* size: auto; */
+            list-style: none;
+            /* flex-direction: row; */
+            /* margin: auto; */
+          }
+        }
       }
     }
   }

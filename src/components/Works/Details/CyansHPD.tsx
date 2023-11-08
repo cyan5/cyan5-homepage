@@ -1,7 +1,8 @@
 // CyansHPD.tsx
 
-import src_Fuji from '../../../images/DSC_0050.jpg' 
 import { StyledWorkDetail } from "../../../styles/StyledWorkDetail";
+import src_Fuji from '../../../images/DSC_0050.jpg' 
+import IconLink from "../Icon/IconGitHub";
 
 type CyansHPDType = {
   setShowIDNum: () => void
@@ -13,11 +14,23 @@ const CyansHPD = ({ setShowIDNum }: CyansHPDType) => {
       <div>
         <img src={src_Fuji} alt='image'></img>
         <div>
-          <div>Date: 2023.10.27</div>
+          <div id='date'>Date: 2023.11.08</div>
           <h2>cyan's Homepage</h2>
+          <div id='tags'>
+            <ul>
+              <li>TypeScript + React</li>
+              <li>WebApp</li>
+            </ul>
+          </div>
           <p>
-            本ウェブサイト。個人開発のプロダクトや趣味がわかりやすく見られるサイトがあれば良いなと思い作成。今後も作品が追加され次第更新していく予定。
+            当ウェブサイト。プロダクトや趣味をわかりやすくするために作成。今後も作品が追加され次第更新予定。
           </p>
+          <div id='icon'>
+            <ul>
+              <IconLink iconShape='Link' link=''/>
+              <IconLink iconShape='GitHub' link=''/>
+            </ul>
+          </div>
         </div>
       </div>
     </StyledWorkDetail>
