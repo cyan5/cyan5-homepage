@@ -9,18 +9,32 @@ type IconLinkType = {
 }
 
 const IconLink = ({ iconShape, link }: IconLinkType) => {
-  
-
   const recIcon = () => {
     if (iconShape === 'GitHub') {
-      return <li><img src={src_GitHub} alt='GitHub_icon'></img>GitHub</li>
+      return (
+        <>
+          <img src={src_GitHub} alt='GitHub_icon'></img>
+          GitHub
+        </>
+      )
     } else if (iconShape === 'Link') {
-      return <li><img src={src_Link} alt='Link_icon'></img>Link</li>
+      return (
+        <>
+          <img src={src_Link} alt='Link_icon'></img>
+          Link
+        </>
+      )
     }
   }
 
   return(
-    recIcon()
+    <>
+      <a href={link}>
+        <li>
+          {recIcon()}
+        </li>
+      </a>
+    </>
   );
 };
 
