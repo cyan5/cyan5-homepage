@@ -27,8 +27,8 @@ const CyansHPD = ({ setShowIDNum }: CyansHPDType) => {
           </p>
           <div id='icon'>
             <ul>
-              <IconLink iconShape='Link' link=''/>
-              <IconLink iconShape='GitHub' link=''/>
+              <IconLink iconShape='Link' link='https://cyan5.github.io/cyan5-homepage/'/>
+              <IconLink iconShape='GitHub' link='https://github.com/cyan5/cyan5-homepage'/>
             </ul>
           </div>
         </div>

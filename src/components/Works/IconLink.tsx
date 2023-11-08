@@ -29,7 +29,7 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
 
   return(
     <>
-      <a href={link}>
+      <a href={link} target='_blank'>
         <li>
           {recIcon()}
         </li>
