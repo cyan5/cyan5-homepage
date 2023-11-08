@@ -1,7 +1,7 @@
 // IconLink.tsx
 
-import src_GitHub from '../../../images/icon/github-mark.png'
-import src_Link from '../../../images/icon/hyperlink.png'
+import src_GitHub from '../../images/icon/github-mark.png'
+import src_Link from '../../images/icon/hyperlink.png'
 
 type IconLinkType = {
   iconShape: string
