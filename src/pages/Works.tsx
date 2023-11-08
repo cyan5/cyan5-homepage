@@ -20,17 +20,25 @@ import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
 // import MultiAgentSimulation from "../components/Works/Boxes/MultiAgentSimulation";
 
 const Works = () => {
-  const [showCyansHP, setShowCyansHP] = useState<boolean>();
+  const [showID, setShowID] = useState<number>(0);
 
-  const setShowIDNum = () => {
-    setShowCyansHP(!showCyansHP)
+  function setShowIDNum(id: number) {
+    setShowID(id)
+  }
+
+  const showDetail = (id: number) => {
+    if (id === 1) {
+      return (
+        <CyansHPD setShowIDNum={setShowIDNum} />
+      )
+    }
   }
 
   return(
     <div>
       {/* <Cover /> */}
       <NavBar />
-      {showCyansHP && <CyansHPD setShowIDNum={setShowIDNum}/>}
+      {showDetail(showID)}
       <StyledContents>
         <h1>Works</h1>
         <h2>Products</h2>

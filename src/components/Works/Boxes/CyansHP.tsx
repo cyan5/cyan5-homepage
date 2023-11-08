@@ -4,12 +4,12 @@ import { StyledWorkItem } from "../../../styles/StyledWorkBox";
 import src_Fuji from '../../../images/DSC_0050.jpg' 
 
 type CyansHPType = {
-  setShowIDNum: () => void
+  setShowIDNum: (id: number) => void
 }
 
 const CyansHP = ({ setShowIDNum }: CyansHPType) => {
   return(
-    <StyledWorkItem onClick={setShowIDNum}>
+    <StyledWorkItem onClick={() => setShowIDNum(1)}>
       <img src={src_Fuji} alt='image'/>
       <div>
         <h4>cyan's Homepage</h4>

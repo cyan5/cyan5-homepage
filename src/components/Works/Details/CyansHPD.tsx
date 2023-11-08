@@ -5,12 +5,12 @@ import src_Fuji from '../../../images/DSC_0050.jpg'
 import IconLink from "../IconLink";
 
 type CyansHPDType = {
-  setShowIDNum: () => void
+  setShowIDNum: (id: number) => void
 }
 
 const CyansHPD = ({ setShowIDNum }: CyansHPDType) => {
   return(
-    <StyledWorkDetail onClick={setShowIDNum}>
+    <StyledWorkDetail onClick={() => setShowIDNum(0)}>
       <div>
         <img src={src_Fuji} alt='image'></img>
         <div>
