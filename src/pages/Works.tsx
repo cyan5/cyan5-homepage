@@ -17,7 +17,7 @@ import Itookashi from "../components/Works/Boxes/Itookashi";
 import Comp005 from "../components/Works/Boxes/Comp005";
 import Kizuna from "../components/Works/Boxes/Kizuna";
 import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
-import MultiAgentSimulation from "../components/Works/Boxes/MultiAgentSimulation";
+// import MultiAgentSimulation from "../components/Works/Boxes/MultiAgentSimulation";
 
 const Works = () => {
   const [showCyansHP, setShowCyansHP] = useState<boolean>();
@@ -39,7 +39,7 @@ const Works = () => {
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />
-          <MultiAgentSimulation />
+          {/* <MultiAgentSimulation /> */}
         </StyledBox>
         <h2>Hobbies</h2>
         <StyledBox>
