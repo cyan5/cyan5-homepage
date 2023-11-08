@@ -15,9 +15,9 @@ export const StyledWorkDetail = styled.div`
   margin: 0;
   
   div {
-    width: 800px;
+    width: 600px;
+    /* height: 700px; */
     border-radius: 20px;
-    /* height: 60%; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,15 +30,16 @@ export const StyledWorkDetail = styled.div`
     border-style: solid;
     border-color: rgb(160,160,160);
 
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 750px) {
       width: 80vw;
     }
 
     img {
-      object-fit: cover;
-      display: block;
+      position: relative;
+      /* object-fit: cover; */
+      /* display: block; */
       width: 100%;
-      height: 50%;
+      height: 30%;
       padding: 0.5px;
       margin: 0;
       border-radius: 18.5px 18.5px 0px 0px;
