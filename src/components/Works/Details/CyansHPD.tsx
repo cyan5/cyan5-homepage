@@ -2,7 +2,7 @@
 
 import { StyledWorkDetail } from "../../../styles/StyledWorkDetail";
 import src_Fuji from '../../../images/DSC_0050.jpg' 
-import IconLink from "../Icon/IconGitHub";
+import IconLink from "../IconLink";
 
 type CyansHPDType = {
   setShowIDNum: () => void
