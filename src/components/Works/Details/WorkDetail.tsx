@@ -16,7 +16,7 @@ const WorkDetail = ({ id, srcImage, closeDetail }: WorkDetailType) => {
   const workDataKey: keyof typeof worksData = id
   const workData = worksData[workDataKey]
 
-  const tagItems = workData.tags.map((tagItem, index) => 
+  const tagItems = workData.tags.map((tagItem) => 
     <li key={tagItem.key}>{tagItem.tag}</li>
   )
 
