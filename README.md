@@ -6,7 +6,8 @@ https://cyan5.github.io/cyan5-homepage/
 
 ## 開発環境
 Ubuntu on WSL2<br>
-React + TypeScript + Vite<br>
+TypeScript + React<br>
+build: Vite<br>
 CSS-in-JS: Linaria
 
 ## 実装について
