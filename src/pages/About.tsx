@@ -7,7 +7,7 @@ import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
 import src_Cyan from '../images/cyan.png'
 import { StyledIconLeft } from "../styles/StyledIconLeft";
-import IconLink from "../components/Works/IconLink";
+import IconLink from "../components/IconLink";
 
 const About = () => {
   return(
@@ -52,8 +52,8 @@ const About = () => {
         <ul><li><h2>Links</h2></li></ul>
 
         <StyledIconLeft>
-          <IconLink iconShape='X' link={'https://twitter.com/r_vanis'} />
-          <IconLink iconShape='GitHub' link={'https://github.com/cyan5'} />
+          <IconLink key={0} shape='X' link={'https://twitter.com/r_vanis'} />
+          <IconLink key={1} shape='GitHub' link={'https://github.com/cyan5'} />
         </StyledIconLeft>
 
       </StyledContents>

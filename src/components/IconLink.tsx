@@ -1,30 +1,30 @@
 // IconLink.tsx
 
 import { styled } from '@linaria/react'
-import src_GitHub from '../../images/icon/github-mark.png'
-import src_Link from '../../images/icon/hyperlink.png'
-import src_X from '../../images/icon/xlogo-black_240p.png'
+import src_GitHub from '../images/icon/github-mark.png'
+import src_Link from '../images/icon/hyperlink.png'
+import src_X from '../images/icon/xlogo-black_240p.png'
 
 type IconLinkType = {
-  iconShape: string
+  shape: string
   link: string
 }
 
-const IconLink = ({ iconShape, link }: IconLinkType) => {
+const IconLink = ({ shape, link }: IconLinkType) => {
   const recIcon = () => {
-    if (iconShape === 'GitHub') {
+    if (shape === 'GitHub') {
       return(
         <>
           <img src={src_GitHub} height='100%' alt='icon_GitHub'></img>
         </>
       )
-    } else if (iconShape === 'Link') {
+    } else if (shape === 'Link') {
       return(
         <>
           <img src={src_Link} height='100%' alt='icon_Link'></img>
         </>
       )
-    } else if (iconShape === 'X') {
+    } else if (shape === 'X') {
       return(
         <>
           <img src={src_X} height='80%' alt='icon_X'></img>
@@ -34,15 +34,15 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
   }
 
   const recText = () => {
-    if (iconShape === 'GitHub') {
+    if (shape === 'GitHub') {
       return(
         <>GitHub</>
       )
-    } else if (iconShape === 'Link') {
+    } else if (shape === 'Link') {
       return(
         <>Link</>
       )
-    } else if (iconShape === 'X') {
+    } else if (shape === 'X') {
       return(
         <>X (旧Twitter)</>
       )

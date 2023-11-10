@@ -5,6 +5,7 @@ interface worksDataIF {
     tags: string[];
     outline: string;
     links: {
+      key: number;
       shape: string;
       link: string;
     }[];
@@ -15,6 +16,7 @@ interface worksDataIF {
     tags: string[];
     outline: string;
     links: {
+      key: number;
       shape: string;
       link: string;
     }[];
@@ -28,8 +30,8 @@ export const worksData: worksDataIF = {
     tags: ["TypeScript + React", "WebApp"], 
     outline: "当ウェブサイト。プロダクトや趣味をわかりやすくするために作成。今後も作品が追加され次第更新予定。", 
     links: [
-      {shape: "Link", link: ""}, 
-      {shape: "GitHub", link: ""}
+      {key:0, shape: "Link", link: "http://localhost:5173/cyan5-homepage"}, 
+      {key:1, shape: "GitHub", link: "https://github.com/cyan5/cyan5-homepage"}
     ]
   }
 }

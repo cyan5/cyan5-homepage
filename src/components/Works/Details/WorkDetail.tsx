@@ -1,6 +1,6 @@
 // WorkDetail.tsx
 
-import IconLink from "../IconLink";
+import IconLink from "../../IconLink";
 import { StyledIconRight } from "../../../styles/StyledIconRight";
 import { styled } from "@linaria/react";
 import { worksData } from "../WorksData";
@@ -16,12 +16,12 @@ const WorkDetail = ({ id, srcImage, closeDetail }: WorkDetailType) => {
   const workDataKey: keyof typeof worksData = id
   const workData = worksData[workDataKey]
 
-  const tagItems = workData.tags.map((tagItem) => 
-    <li>{tagItem}</li>
+  const tagItems = workData.tags.map((tagItem, index) => 
+    <li key={index}>{tagItem}</li>
   )
 
   const iconLinkItems = workData.links.map((iconLinkItem) =>
-    <IconLink iconShape={iconLinkItem.shape} link={iconLinkItem.link} />
+    <IconLink key={iconLinkItem.key} shape={iconLinkItem.shape} link={iconLinkItem.link}/>
   )
 
   return(
@@ -34,9 +34,13 @@ const WorkDetail = ({ id, srcImage, closeDetail }: WorkDetailType) => {
         <StyledDown>
           <div id='date'>Date: {workData.date}</div>
           <h2>{workData.title}</h2>
-          <div id='tags'><ul>{tagItems}</ul></div>
+          <div id='tags'>
+            <ul>{tagItems}</ul>
+          </div>
           <p>{workData.outline}</p>
-          <StyledIconRight>{iconLinkItems}</StyledIconRight>
+          <StyledIconRight>
+            {iconLinkItems}
+          </StyledIconRight>
         </StyledDown>
       </StyledWorkBody>
     </StyledWorkDetail>
