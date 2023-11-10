@@ -44,7 +44,7 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
       )
     } else if (iconShape === 'X') {
       return(
-        <>X(旧Twitter)</>
+        <>X (旧Twitter)</>
       )
     }
   }
@@ -66,7 +66,7 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
 };
 
 const StyledLi = styled.li`
-  width: calc(50px + 5%);
+  width: calc(60px + 5%);
   list-style: none;
   text-align: center;
   margin: 1vh 0 2vh;
@@ -86,12 +86,5 @@ const StyledLi = styled.li`
     }
   }
 `
-
-// const StyledIcon = styled.div`
-//   height: 50px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `
 
 export default IconLink;
