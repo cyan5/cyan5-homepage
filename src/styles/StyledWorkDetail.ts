@@ -66,7 +66,7 @@ export const StyledImg = styled.div`
 
 export const StyledContent = styled.div`
   position: relative;
-  padding: 0 3% 20px
+  padding: 0 3% 20px;
 
   h2 {
     text-align: center;
@@ -74,12 +74,10 @@ export const StyledContent = styled.div`
   }
 
   h4 {
-    /* padding: 0% 2.5vw; */
     margin: 0;
   }
 
   p {
-    /* padding: 0% 2.5vw; */
     margin: 0;
   }
 
