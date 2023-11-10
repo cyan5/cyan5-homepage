@@ -1,20 +1,24 @@
 // CyansHPD.tsx
 
-import { StyledWorkDetail } from "../../../styles/StyledWorkDetail";
+import { StyledContent, StyledImg, StyledWorkBody, StyledWorkDetail } from "../../../styles/StyledWorkDetail";
 import src_Fuji from '../../../images/DSC_0050.jpg' 
 import IconLink from "../IconLink";
+import { StyledIconRight } from "../../../styles/StyledIconRight";
 
 type CyansHPDType = {
-  setShowIDNum: (id: number) => void
+  closeDetail: (event: React.MouseEvent) => void
 }
 
-const CyansHPD = ({ setShowIDNum }: CyansHPDType) => {
+const CyansHPD = ({ closeDetail }: CyansHPDType) => {
   return(
-    <StyledWorkDetail onClick={() => setShowIDNum(0)}>
-      <div>
-        <img src={src_Fuji} alt='image'></img>
-        <div>
-          <div id='date'>Date: 2023.11.08</div>
+    <StyledWorkDetail onClick={closeDetail}>
+      <StyledWorkBody>
+        <StyledImg>
+          <div onClick={closeDetail}>×</div>
+          <img src={src_Fuji} alt='image'></img>
+        </StyledImg>
+        <StyledContent>
+          <div id='date'>Date: 2023.11.10</div>
           <h2>cyan's Homepage</h2>
           <div id='tags'>
             <ul>
@@ -25,14 +29,12 @@ const CyansHPD = ({ setShowIDNum }: CyansHPDType) => {
           <p>
             当ウェブサイト。プロダクトや趣味をわかりやすくするために作成。今後も作品が追加され次第更新予定。
           </p>
-          <div id='icon'>
-            <ul>
-              <IconLink iconShape='Link' link='https://cyan5.github.io/cyan5-homepage/'/>
-              <IconLink iconShape='GitHub' link='https://github.com/cyan5/cyan5-homepage'/>
-            </ul>
-          </div>
-        </div>
-      </div>
+          <StyledIconRight>
+            <IconLink iconShape='Link' link='https://cyan5.github.io/cyan5-homepage/'/>
+            <IconLink iconShape='GitHub' link='https://github.com/cyan5/cyan5-homepage'/>
+          </StyledIconRight>
+        </StyledContent>
+      </StyledWorkBody>
     </StyledWorkDetail>
   );
 };

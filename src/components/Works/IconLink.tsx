@@ -1,5 +1,6 @@
 // IconLink.tsx
 
+import { styled } from '@linaria/react'
 import src_GitHub from '../../images/icon/github-mark.png'
 import src_Link from '../../images/icon/hyperlink.png'
 
@@ -30,12 +31,22 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
   return(
     <>
       <a href={link} target='_blank'>
-        <li>
+        <StyledLi>
           {recIcon()}
-        </li>
+        </StyledLi>
       </a>
     </>
   );
 };
+
+const StyledLi = styled.li`
+  width: 50px;
+  list-style: none;
+  text-align: center;
+  margin: 1vh 15px 2vh 15px;
+  img {
+    width: 100%;
+  }
+`
 
 export default IconLink;

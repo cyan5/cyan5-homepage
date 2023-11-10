@@ -17,10 +17,9 @@ import Itookashi from "../components/Works/Boxes/Itookashi";
 import Comp005 from "../components/Works/Boxes/Comp005";
 import Kizuna from "../components/Works/Boxes/Kizuna";
 import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
-// import MultiAgentSimulation from "../components/Works/Boxes/MultiAgentSimulation";
 
 const Works = () => {
-  const [showID, setShowID] = useState<number>(0);
+  const [showID, setShowID] = useState<number>(1);
 
   function setShowIDNum(id: number) {
     setShowID(id)
@@ -29,25 +28,29 @@ const Works = () => {
   const showDetail = (id: number) => {
     if (id === 1) {
       return (
-        <CyansHPD setShowIDNum={setShowIDNum} />
+        <CyansHPD closeDetail={closeDetail}/>
       )
     }
   }
 
+  const closeDetail = (event: React.MouseEvent) => {
+    if (event.target === event.currentTarget) {
+      setShowID(0)
+    }
+  }
+
   return(
-    <div>
-      {/* <Cover /> */}
+    <>
       <NavBar />
       {showDetail(showID)}
       <StyledContents>
         <h1>Works</h1>
         <h2>Products</h2>
         <StyledBox>
-          <CyansHP setShowIDNum={setShowIDNum}/>
+          <CyansHP id={1} setShowIDNum={setShowIDNum}/>
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />
-          {/* <MultiAgentSimulation /> */}
         </StyledBox>
         <h2>Hobbies</h2>
         <StyledBox>
@@ -58,7 +61,7 @@ const Works = () => {
         </StyledBox>
       </StyledContents>
       <Footer />
-    </div>
+    </>
   );
 };
 
