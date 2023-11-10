@@ -4,8 +4,8 @@ import { StyledWorkItem } from "../../../styles/StyledWorkBox";
 import src_Fuji from '../../../images/DSC_0050.jpg' 
 
 type CyansHPType = {
-  id: number
-  setShowIDNum: (id: number) => void
+  id: string
+  setShowIDNum: (id: string) => void
 }
 
 const CyansHP = ({ id, setShowIDNum }: CyansHPType) => {

@@ -1,7 +1,6 @@
 // Works.tsx
 
 import { styled } from "@linaria/react";
-// import Cover from "../components/Cover";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
@@ -19,14 +18,14 @@ import Kizuna from "../components/Works/Boxes/Kizuna";
 import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
 
 const Works = () => {
-  const [showID, setShowID] = useState<number>(1);
+  const [showID, setShowID] = useState<string>('');
 
-  function setShowIDNum(id: number) {
+  function setShowIDNum(id: string) {
     setShowID(id)
   }
 
-  const showDetail = (id: number) => {
-    if (id === 1) {
+  const showDetail = (id: string) => {
+    if (id === 'cyansHP') {
       return (
         <CyansHPD closeDetail={closeDetail}/>
       )
@@ -35,7 +34,7 @@ const Works = () => {
 
   const closeDetail = (event: React.MouseEvent) => {
     if (event.target === event.currentTarget) {
-      setShowID(0)
+      setShowID('')
     }
   }
 
@@ -47,7 +46,7 @@ const Works = () => {
         <h1>Works</h1>
         <h2>Products</h2>
         <StyledBox>
-          <CyansHP id={1} setShowIDNum={setShowIDNum}/>
+          <CyansHP id={'cyansHP'} setShowIDNum={setShowIDNum}/>
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />
