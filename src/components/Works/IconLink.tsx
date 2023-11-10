@@ -51,38 +51,47 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
 
   return(
     <>
-      <a href={link} target='_blank'>
-        <StyledLi>
+      <StyledLi>
+        <a href={link} target='_blank'>
           <div id='up'>
             {recIcon()}
           </div>
           <div id='down'>
             {recText()}
           </div>
-        </StyledLi>
-      </a>
+        </a>
+      </StyledLi>
     </>
   );
 };
 
 const StyledLi = styled.li`
-  width: calc(30px + 6vw);
+  width: calc(50px + 5%);
   list-style: none;
   text-align: center;
   margin: 1vh 0 2vh;
   display: grid;
   grid-template-rows: 50px;
 
-  #up {
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #down {
-    /* background-color: orange; */
+  a {
+    #up {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #down {
+      height: auto;
+    }
   }
 `
+
+// const StyledIcon = styled.div`
+//   height: 50px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `
 
 export default IconLink;
