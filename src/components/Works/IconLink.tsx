@@ -3,6 +3,7 @@
 import { styled } from '@linaria/react'
 import src_GitHub from '../../images/icon/github-mark.png'
 import src_Link from '../../images/icon/hyperlink.png'
+import src_X from '../../images/icon/xlogo-black_240p.png'
 
 type IconLinkType = {
   iconShape: string
@@ -12,18 +13,38 @@ type IconLinkType = {
 const IconLink = ({ iconShape, link }: IconLinkType) => {
   const recIcon = () => {
     if (iconShape === 'GitHub') {
-      return (
+      return(
         <>
-          <img src={src_GitHub} alt='GitHub_icon'></img>
-          GitHub
+          <img src={src_GitHub} height='100%' alt='icon_GitHub'></img>
         </>
       )
     } else if (iconShape === 'Link') {
-      return (
+      return(
         <>
-          <img src={src_Link} alt='Link_icon'></img>
-          Link
+          <img src={src_Link} height='100%' alt='icon_Link'></img>
         </>
+      )
+    } else if (iconShape === 'X') {
+      return(
+        <>
+          <img src={src_X} height='80%' alt='icon_X'></img>
+        </>
+      )
+    }
+  }
+
+  const recText = () => {
+    if (iconShape === 'GitHub') {
+      return(
+        <>GitHub</>
+      )
+    } else if (iconShape === 'Link') {
+      return(
+        <>Link</>
+      )
+    } else if (iconShape === 'X') {
+      return(
+        <>X(旧Twitter)</>
       )
     }
   }
@@ -32,7 +53,12 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
     <>
       <a href={link} target='_blank'>
         <StyledLi>
-          {recIcon()}
+          <div id='up'>
+            {recIcon()}
+          </div>
+          <div id='down'>
+            {recText()}
+          </div>
         </StyledLi>
       </a>
     </>
@@ -40,12 +66,22 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
 };
 
 const StyledLi = styled.li`
-  width: 50px;
+  width: 100px;
   list-style: none;
   text-align: center;
-  margin: 1vh 15px 2vh 15px;
-  img {
-    width: 100%;
+  margin: 1vh 0 2vh;
+  display: grid;
+  grid-template-rows: 50px;
+
+  #up {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #down {
+    /* background-color: orange; */
   }
 `
 
