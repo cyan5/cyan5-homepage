@@ -1,21 +1,21 @@
-// CyansHPD.tsx
+// WorkDetail.tsx
 
 import { StyledContent, StyledImg, StyledWorkBody, StyledWorkDetail } from "../../../styles/StyledWorkDetail";
-import src_Fuji from '../../../images/DSC_0050.jpg' 
 import IconLink from "../IconLink";
 import { StyledIconRight } from "../../../styles/StyledIconRight";
 
-type CyansHPDType = {
+type WorkDetailType = {
+  srcImage: string
   closeDetail: (event: React.MouseEvent) => void
 }
 
-const CyansHPD = ({ closeDetail }: CyansHPDType) => {
+const WorkDetail = ({ srcImage, closeDetail }: WorkDetailType) => {
   return(
     <StyledWorkDetail onClick={closeDetail}>
       <StyledWorkBody>
         <StyledImg>
           <div onClick={closeDetail}>×</div>
-          <img src={src_Fuji} alt='image'></img>
+          <img src={srcImage} alt='image'></img>
         </StyledImg>
         <StyledContent>
           <div id='date'>Date: 2023.11.10</div>
@@ -39,4 +39,4 @@ const CyansHPD = ({ closeDetail }: CyansHPDType) => {
   );
 };
 
-export default CyansHPD;
+export default WorkDetail;

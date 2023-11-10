@@ -18,18 +18,24 @@ export const StyledContents = styled.div`
     border-bottom-width: 2px;
   }
 
-  h2 {
-    background-color: #eeefff;
-    padding: 0px 15px;
-    border-style: solid;
-    border-color: #174f7f;
-    border-top-width: 0px;
-    border-left-width: 5px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
+  ul {
+    padding: 0 30px;
+    li {
+      h2 {
+        width: fit-content;
+        padding: 0px 15px;
+        text-decoration: underline;
+        text-decoration-thickness: 1.6px;
+      }
+    }
   }
 
   p {
+    padding-left: 45px;
     text-indent: 1rem;
+  }
+
+  #noindent {
+    text-indent: 0;
   }
 `

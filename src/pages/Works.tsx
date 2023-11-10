@@ -6,9 +6,10 @@ import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
 import { useState } from "react";
 
+import src_Fuji from '../images/DSC_0050.jpg'
+
 // Works components
 import CyansHP from "../components/Works/Boxes/CyansHP";
-import CyansHPD from "../components/Works/Details/CyansHPD";
 import ReactWorldWeather from "../components/Works/Boxes/ReactWorldWeather";
 import MoveItem from "../components/Works/Boxes/MoveItem";
 import Numer0nSearch from "../components/Works/Boxes/Numer0nSearch";
@@ -16,6 +17,7 @@ import Itookashi from "../components/Works/Boxes/Itookashi";
 import Comp005 from "../components/Works/Boxes/Comp005";
 import Kizuna from "../components/Works/Boxes/Kizuna";
 import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
+import WorkDetail from "../components/Works/Details/WorkDetail";
 
 const Works = () => {
   const [showID, setShowID] = useState<string>('');
@@ -27,7 +29,9 @@ const Works = () => {
   const showDetail = (id: string) => {
     if (id === 'cyansHP') {
       return (
-        <CyansHPD closeDetail={closeDetail}/>
+        <>
+          <WorkDetail srcImage={src_Fuji} closeDetail={closeDetail}/>
+        </>
       )
     }
   }
@@ -44,14 +48,14 @@ const Works = () => {
       {showDetail(showID)}
       <StyledContents>
         <h1>Works</h1>
-        <h2>Products</h2>
+        <ul><li><h2>Products</h2></li></ul>
         <StyledBox>
           <CyansHP id={'cyansHP'} setShowIDNum={setShowIDNum}/>
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />
         </StyledBox>
-        <h2>Hobbies</h2>
+        <ul><li><h2>Hobbies</h2></li></ul>
         <StyledBox>
           <Itookashi />
           <Comp005 />
