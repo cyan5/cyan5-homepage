@@ -66,6 +66,7 @@ export const StyledImg = styled.div`
 
 export const StyledContent = styled.div`
   position: relative;
+  padding: 0 3% 20px
 
   h2 {
     text-align: center;
@@ -73,12 +74,12 @@ export const StyledContent = styled.div`
   }
 
   h4 {
-    padding: 0% 2.5vw;
+    /* padding: 0% 2.5vw; */
     margin: 0;
   }
 
   p {
-    padding: 0% 2.5vw;
+    /* padding: 0% 2.5vw; */
     margin: 0;
   }
 
@@ -88,12 +89,12 @@ export const StyledContent = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.2vh 2.5vw;
+    padding: 0.2vh 3%;
   }
 
   #tags {
     ul {
-      padding: 0 2.5vw;
+      padding: 0;
       margin: 1vh 0;
       li {
         list-style: none;
