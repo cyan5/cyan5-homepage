@@ -69,11 +69,11 @@ export const StyledContent = styled.div`
 
   h2 {
     text-align: center;
-    margin: 1vh 0 0 0;
+    margin: 2.5vh 0 0 0;
   }
 
   h4 {
-    padding: 0% 2vw;
+    padding: 0% 3vw;
     margin: 0;
   }
 
@@ -88,13 +88,13 @@ export const StyledContent = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.2vh 2vw;
+    padding: 0.2vh 3vw;
   }
 
   #tags {
     ul {
-      padding: 0 2vw;
-      margin: 0.5vh 0;
+      padding: 0 3vw;
+      margin: 1vh 0;
       li {
         list-style: none;
         display: inline-flex;

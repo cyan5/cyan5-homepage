@@ -66,7 +66,7 @@ const IconLink = ({ iconShape, link }: IconLinkType) => {
 };
 
 const StyledLi = styled.li`
-  width: 100px;
+  width: calc(30px + 6vw);
   list-style: none;
   text-align: center;
   margin: 1vh 0 2vh;
