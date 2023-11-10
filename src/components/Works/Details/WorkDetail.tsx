@@ -17,7 +17,7 @@ const WorkDetail = ({ id, srcImage, closeDetail }: WorkDetailType) => {
   const workData = worksData[workDataKey]
 
   const tagItems = workData.tags.map((tagItem, index) => 
-    <li key={index}>{tagItem}</li>
+    <li key={tagItem.key}>{tagItem.tag}</li>
   )
 
   const iconLinkItems = workData.links.map((iconLinkItem) =>

@@ -12,8 +12,8 @@ const WorkBox = ({ id, setShowIDNum }: WorkBoxType) => {
   const workDataKey: keyof typeof worksData = id
   const workData = worksData[workDataKey]
 
-  const tagItems = workData.tags.map((tagItem, index) => 
-    <li key={index}>{tagItem}</li>
+  const tagItems = workData.tags.map((tagItem) => 
+    <li key={tagItem.key}>{tagItem.tag}</li>
   )
   return(
     <StyledWorkItem onClick={() => setShowIDNum(id)}>
