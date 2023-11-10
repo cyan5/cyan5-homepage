@@ -1,16 +1,29 @@
 // WorkDetail.tsx
 
-// import { StyledContent } from "../../../styles/StyledWorkDetail";
 import IconLink from "../IconLink";
 import { StyledIconRight } from "../../../styles/StyledIconRight";
 import { styled } from "@linaria/react";
+import { worksData } from "../WorksData";
 
 type WorkDetailType = {
+  id: string
   srcImage: string
   closeDetail: (event: React.MouseEvent) => void
 }
 
-const WorkDetail = ({ srcImage, closeDetail }: WorkDetailType) => {
+const WorkDetail = ({ id, srcImage, closeDetail }: WorkDetailType) => {
+  
+  const workDataKey: keyof typeof worksData = id
+  const workData = worksData[workDataKey]
+
+  const tagItems = workData.tags.map((tagItem) => 
+    <li>{tagItem}</li>
+  )
+
+  const iconLinkItems = workData.links.map((iconLinkItem) =>
+    <IconLink iconShape={iconLinkItem.shape} link={iconLinkItem.link} />
+  )
+
   return(
     <StyledWorkDetail onClick={closeDetail}>
       <StyledWorkBody>
@@ -19,21 +32,11 @@ const WorkDetail = ({ srcImage, closeDetail }: WorkDetailType) => {
           <img src={srcImage} alt='image'></img>
         </StyledUp>
         <StyledDown>
-          <div id='date'>Date: 2023.11.10</div>
-          <h2>cyan's Homepage</h2>
-          <div id='tags'>
-            <ul>
-              <li>TypeScript + React</li>
-              <li>WebApp</li>
-            </ul>
-          </div>
-          <p>
-            当ウェブサイト。プロダクトや趣味をわかりやすくするために作成。今後も作品が追加され次第更新予定。
-          </p>
-          <StyledIconRight>
-            <IconLink iconShape='Link' link='https://cyan5.github.io/cyan5-homepage/'/>
-            <IconLink iconShape='GitHub' link='https://github.com/cyan5/cyan5-homepage'/>
-          </StyledIconRight>
+          <div id='date'>Date: {workData.date}</div>
+          <h2>{workData.title}</h2>
+          <div id='tags'><ul>{tagItems}</ul></div>
+          <p>{workData.outline}</p>
+          <StyledIconRight>{iconLinkItems}</StyledIconRight>
         </StyledDown>
       </StyledWorkBody>
     </StyledWorkDetail>
@@ -118,6 +121,7 @@ const StyledDown = styled.div`
   }
 
   p {
+    text-indent: 1rem;
     margin: 0;
   }
 

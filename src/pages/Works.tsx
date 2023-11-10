@@ -30,7 +30,7 @@ const Works = () => {
     if (id === 'cyansHP') {
       return (
         <>
-          <WorkDetail srcImage={src_Fuji} closeDetail={closeDetail}/>
+          <WorkDetail id={id} srcImage={src_Fuji} closeDetail={closeDetail}/>
         </>
       )
     }
