@@ -1,7 +1,7 @@
 import srcFuji from "../../images/DSC_0050.jpg"
 import srcComp005 from "../../images/comp005.png"
 
-export const worksProduct = [
+export const workProducts = [
   {
     id: "cyansHP", 
     title: "cyan's Homepage", 
@@ -19,7 +19,7 @@ export const worksProduct = [
   }, 
 ]
 
-export const worksHobby = [
+export const workHobbies = [
   {
     id: "Comp005",
     title: "自作曲5", 
@@ -38,4 +38,3 @@ export const worksHobby = [
     ]
   }, 
 ]
-

@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
 import { useState } from "react";
-import { worksProduct, worksHobby } from "../components/Works/WorksData";
+import { workProducts, workHobbies } from "../components/Works/WorksData";
 
 // Works components
 import CyansHP from "../components/Works/Boxes/CyansHP";
@@ -32,16 +32,20 @@ const Works = () => {
     }
   }
 
-  const workProductItems = worksProduct.map((workProductItem) =>
-    <WorkBox key={workProductItem.id} dataSet={workProductItem} setShowIDNum={setShowIDNum} />
+  const workProductBoxes = workProducts.map((workProductBox) =>
+    <WorkBox key={workProductBox.id} dataSet={workProductBox} setShowIDNum={setShowIDNum} />
   )
 
-  const workHobbyItems = worksHobby.map((workHobbyItem) => 
-    <WorkBox key={workHobbyItem.id} dataSet={workHobbyItem} setShowIDNum={setShowIDNum} />
+  const workHobbyBoxes = workHobbies.map((workHobbyBox) => 
+    <WorkBox key={workHobbyBox.id} dataSet={workHobbyBox} setShowIDNum={setShowIDNum} />
   )
 
-  const workDetailItems = worksProduct.map((workDetailItem) =>
+  const workProductDetails = workProducts.map((workDetailItem) =>
     <WorkDetail key={workDetailItem.id} currentID={currentID} dataSet={workDetailItem} closeDetail={closeDetail}/>
+  )
+
+  const workHobbyDetails = workHobbies.map((workHobbyDetail) =>
+    <WorkDetail key={workHobbyDetail.id} currentID={currentID} dataSet={workHobbyDetail} closeDetail={closeDetail}/>
   )
 
   // const workDetail
@@ -50,7 +54,8 @@ const Works = () => {
     <>
       <NavBar />
       {/* {showDetail(currentID)} */}
-      {workDetailItems}
+      {workProductDetails}
+      {workHobbyDetails}
       {/* <WorkDetail id={showID} closeDetail={closeDetail}/> */}
       <StyledContents>
         <h1>Works</h1>
@@ -61,7 +66,7 @@ const Works = () => {
           <MoveItem />
           <Numer0nSearch />
         </StyledBox> */}
-        <StyledBox>{workProductItems}</StyledBox>
+        <StyledBox>{workProductBoxes}</StyledBox>
         <ul><li><h2>Hobbies</h2></li></ul>
         {/* <StyledBox>
           <Itookashi />
@@ -69,7 +74,7 @@ const Works = () => {
           <Kizuna />
           <KaoruJuyoka />
         </StyledBox> */}
-        <StyledBox>{workHobbyItems}</StyledBox>
+        <StyledBox>{workHobbyBoxes}</StyledBox>
       </StyledContents>
       <Footer />
     </>
