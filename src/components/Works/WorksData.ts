@@ -1,4 +1,5 @@
 import srcFuji from "../../images/DSC_0050.jpg"
+import srcComp005 from "../../images/comp005.png"
 
 interface worksDataIF {
   [worksDataKey: string]: {
@@ -32,6 +33,22 @@ export const worksData: worksDataIF = {
     links: [
       {key:0, shape: "Link", link: "http://localhost:5173/cyan5-homepage"}, 
       {key:1, shape: "GitHub", link: "https://github.com/cyan5/cyan5-homepage"}
+    ]
+  }, 
+  Comp005: {
+    title: "自作曲5", 
+    date: "2023.11.11", 
+    srcImage: srcComp005, 
+    tags: [
+      {key:0, tag: "DTM"}, 
+      {key:1, tag: "作曲"}
+    ], 
+    outline: "自作曲の5作品目。", 
+    links: [
+      {key:0, shape: "YouTube", link: "http://localhost:5173/cyan5-homepage"}, 
+      {key:0, shape: "X", link: "http://localhost:5173/cyan5-homepage"}, 
+      {key:0, shape: "GitHub", link: "http://localhost:5173/cyan5-homepage"}, 
+      {key:0, shape: "Link", link: "http://localhost:5173/cyan5-homepage"}, 
     ]
   }
 }
