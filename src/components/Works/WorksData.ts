@@ -1,21 +1,6 @@
 import srcFuji from "../../images/DSC_0050.jpg"
 
 interface worksDataIF {
-  cyansHP: {
-    title: string;
-    date: string;
-    srcImage: string;
-    tags: {
-        key: number;
-        tag: string;
-    }[];
-    outline: string;
-    links: {
-        key: number;
-        shape: string;
-        link: string;
-    }[];
-  };
   [worksDataKey: string]: {
     title: string;
     date: string;
