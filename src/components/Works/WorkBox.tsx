@@ -36,7 +36,6 @@ const WorkBox = ({ dataSet, setShowIDNum }: WorkBoxType) => {
 const StyledWorkItem = styled.li`
   list-style: none;
   width: calc(97% / 3);
-  /* width: 248px; */
   margin: 0.5%;
   height: 220px;
   border: 1.2px;

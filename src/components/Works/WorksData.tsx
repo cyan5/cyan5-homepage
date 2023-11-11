@@ -39,7 +39,7 @@ export const workProducts = [
       "TypeScript + React", 
       "WebApp", 
     ], 
-    outline: <><a href="https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%A4%E3%81%8F%E3%82%8BReact%E3%82%A2%E3%83%97%E3%83%AA-TypeScript-mod728-ebook/dp/B094Z1R281">参考書</a>をもとに作成した最初のWebアプリケーション。参考書のPure CSSをモダンなStyled-Componentに変更し、他にも細かな機能を追加した。<Red>GitHub PagesではAPIキーを隠しているので天気の表示ができない。</Red></>, 
+    outline: <><a href="https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%A4%E3%81%8F%E3%82%8BReact%E3%82%A2%E3%83%97%E3%83%AA-TypeScript-mod728-ebook/dp/B094Z1R281" target="_blank">参考書</a>をもとに作成した最初のWebアプリケーション。参考書のPure CSSをモダンなStyled-Componentに変更し、他にも細かな機能を追加した。<Red>GitHub PagesではAPIキーを隠しているので天気の表示ができない。</Red></>, 
     links: [
       {shape: "Link", link: "https://cyan5.github.io/react-world-weather/"}, 
       {shape: "GitHub", link: "https://github.com/cyan5/react-world-weather"}
@@ -54,7 +54,7 @@ export const workProducts = [
       "C", 
       "Console"
     ], 
-    outline: <>数当てゲーム「Hit and Blow」（マスターマインド、numer0n、MOOなど様々な呼び名がある）の最適戦略を探索により求めるプログラム。マシンのメモリ不足により更新休止中。メモリを節約した設計に換装し再挑戦する予定。</>, 
+    outline: <>数当てゲーム「Hit and Blow」（マスターマインド、numer0n、MOOなど）の最適戦略を探索により求めるプログラム。マシンのメモリ不足により更新休止中。メモリを節約した設計に換装し再挑戦する予定。</>, 
     links: [
       {shape: "GitHub", link: "https://github.com/cyan5/numer0n_search"}, 
     ]
@@ -68,7 +68,7 @@ export const workProducts = [
       "Powershell", 
       "Shell Script"
     ], 
-    outline: <>Powershellスクリプト。1つのフォルダに写真や動画を入れてスクリプトを実行すると、ファイルの日付情報を参照し、日付ごとのフォルダを作成して仕分けを行う。自宅の古いWindowsPCをNAS化してタスクスケジューラにスクリプトを設定し、簡易ファイルサーバとして運用中。</>, 
+    outline: <>Powershellスクリプト。フォルダ内の写真・動画を、日付情報をもとに仕分けする。スクリプトをタスクスケジューラに設定し、PCをNAS化することで簡易ファイルサーバとして運用することができる。</>, 
     links: [
       {shape: "GitHub", link: "https://github.com/cyan5/MoveItem"}, 
     ]
@@ -127,7 +127,7 @@ export const workHobbies = [
     tags: [
       "動画制作", 
     ], 
-    outline: <>Google Chrome CMのキズナアイ版を作成。<a href="">Google Chrome : Hatsune Miku (初音ミク) </a>のパロティ。動画編集ソフト「AviUtl」で作成。</>, 
+    outline: <>Google Chrome CMのキズナアイ版を作成。<a href="https://youtu.be/MGt25mv4-2Q" target="_blank">Google Chrome : Hatsune Miku (初音ミク) </a>のパロティ。動画編集ソフト「AviUtl」で作成。</>, 
     links: [
       {shape: "YouTube", link: "https://youtu.be/Q3QSO41ux10"}, 
       {shape: "niconico", link: "https://www.nicovideo.jp/watch/sm33443279"}
