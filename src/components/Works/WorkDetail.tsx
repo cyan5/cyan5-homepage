@@ -12,7 +12,7 @@ type WorkDetailType = {
     date: string;
     srcImage: string;
     tags: string[];
-    outline: string;
+    outline: JSX.Element;
     links: {
       shape: string;
       link: string;
