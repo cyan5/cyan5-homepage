@@ -27,7 +27,7 @@ const WorkDetail = ({ id, closeDetail }: WorkDetailType) => {
     <StyledWorkDetail onClick={closeDetail}>
       <StyledWorkBody>
         <StyledUp>
-          <div onClick={closeDetail}>×</div>
+          <StyledDel onClick={closeDetail}>×</StyledDel>
           <img src={workData.srcImage} alt='image'></img>
         </StyledUp>
         <StyledDown>
@@ -156,6 +156,10 @@ const StyledDown = styled.div`
       }
     }
   }
+`
+
+const StyledDel = styled.div `
+  text-shadow: 0px 1px 1px white, 0px -1px 1px white, 1px 0px 1px white, -1px 0px 1px white;
 `
 
 export default WorkDetail;
