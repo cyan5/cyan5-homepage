@@ -1,10 +1,11 @@
 // IconLink.tsx
 
-import { styled } from '@linaria/react'
-import srcGitHub from '../images/icon/github-mark.png'
-import srcLink from '../images/icon/hyperlink.png'
-import srcX from '../images/icon/xlogo-black_240p.png'
-import srcYouTube from '../images/icon/yt_icon_rgb_240p.png'
+import { styled } from "@linaria/react"
+import srcGitHub from "../images/icon/github-mark.png"
+import srcLink from "../images/icon/hyperlink.png"
+import srcX from "../images/icon/xlogo-black_240p.png"
+import srcYouTube from "../images/icon/yt_icon_mono_light_240p.png"
+import srcNiconico from "../images/icon/nc296561_172p.png"
 
 type IconLinkType = {
   shape: string
@@ -44,6 +45,12 @@ const iconData: iconDataKey = {
     height: "80%", 
     alt: "icon_YouTube", 
     srcImage: srcYouTube
+  }, 
+  niconico: {
+    text: "ニコニコ動画", 
+    height: "100%", 
+    alt: "icon_niconico", 
+    srcImage: srcNiconico
   }
 }
 
