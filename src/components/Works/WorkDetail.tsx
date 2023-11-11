@@ -3,46 +3,56 @@
 import IconLink from "../IconLink";
 import { StyledIconRight } from "../../styles/StyledIconRight";
 import { styled } from "@linaria/react";
-import { worksData } from "./WorksData";
-import React from "react";
 
 type WorkDetailType = {
-  id: string
-  closeDetail: (event: React.MouseEvent) => void
+  currentID: string;
+  dataSet: {
+    id: string;
+    title: string;
+    date: string;
+    srcImage: string;
+    tags: string[];
+    outline: string;
+    links: {
+      shape: string;
+      link: string;
+    }[];
+  };
+  closeDetail: (event: React.MouseEvent) => void;
 }
 
-const WorkDetail = ({ id, closeDetail }: WorkDetailType) => {
-  const workDataKey: keyof typeof worksData = id
-  const workData = worksData[workDataKey]
-
-  const tagItems = workData.tags.map((tagItem, index) => 
-    <li key={index}>{tagItem}</li>
+const WorkDetail = ({ currentID, dataSet, closeDetail }: WorkDetailType) => {
+  const tagItems = dataSet.tags.map((tagItem) => 
+    <li key={tagItem}>{tagItem}</li>
   )
 
-  const iconLinkItems = workData.links.map((iconLinkItem) =>
-    <IconLink key={iconLinkItem.key} shape={iconLinkItem.shape} link={iconLinkItem.link}/>
+  const iconLinkItems = dataSet.links.map((iconLinkItem) =>
+    <IconLink key={iconLinkItem.shape} shape={iconLinkItem.shape} link={iconLinkItem.link} />
   )
 
   return(
-    <StyledWorkDetail onClick={closeDetail}>
-      <StyledWorkBody>
-        <StyledUp>
-          <StyledDel onClick={closeDetail}>×</StyledDel>
-          <img src={workData.srcImage} alt='image'></img>
-        </StyledUp>
-        <StyledDown>
-          <div id='date'>Date: {workData.date}</div>
-          <h2>{workData.title}</h2>
-          <div id='tags'>
-            <ul>{tagItems}</ul>
-          </div>
-          <p>{workData.outline}</p>
-          <StyledIconRight>
-            {iconLinkItems}
-          </StyledIconRight>
-        </StyledDown>
-      </StyledWorkBody>
-    </StyledWorkDetail>
+    <>
+      {
+        (dataSet.id === currentID) &&
+        <StyledWorkDetail onClick={closeDetail}>
+          <StyledWorkBody>
+            <StyledUp>
+              <StyledDel onClick={closeDetail}>×</StyledDel>
+              <img src={dataSet.srcImage} alt='image'></img>
+            </StyledUp>
+            <StyledDown>
+              <div id='date'>Date: {dataSet.date}</div>
+              <h2>{dataSet.title}</h2>
+              <div id='tags'>
+                <ul>{tagItems}</ul>
+              </div>
+              <p>{dataSet.outline}</p>
+              <StyledIconRight>{iconLinkItems}</StyledIconRight>
+            </StyledDown>
+          </StyledWorkBody>
+        </StyledWorkDetail>
+      }
+    </>
   );
 };
 

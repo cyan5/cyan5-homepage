@@ -5,8 +5,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { StyledContents } from "../styles/StyledContents";
 import { useState } from "react";
-
-import src_Fuji from '../images/DSC_0050.jpg'
+import { worksProduct, worksHobby } from "../components/Works/WorksData";
 
 // Works components
 import CyansHP from "../components/Works/Boxes/CyansHP";
@@ -17,51 +16,60 @@ import Itookashi from "../components/Works/Boxes/Itookashi";
 import Comp005 from "../components/Works/Boxes/Comp005";
 import Kizuna from "../components/Works/Boxes/Kizuna";
 import KaoruJuyoka from "../components/Works/Boxes/KaoruJuyoka";
-import WorkDetail from "../components/Works/Details/WorkDetail";
+import WorkDetail from "../components/Works/WorkDetail";
+import WorkBox from "../components/Works/WorkBox";
 
 const Works = () => {
-  const [showID, setShowID] = useState<string>('');
+  const [currentID, setCurrentID] = useState<string>('cyansHP')
 
   function setShowIDNum(id: string) {
-    setShowID(id)
-  }
-
-  const showDetail = (id: string) => {
-    if (id === 'cyansHP') {
-      return (
-        <>
-          <WorkDetail id={id} srcImage={src_Fuji} closeDetail={closeDetail}/>
-        </>
-      )
-    }
+    setCurrentID(id)
   }
 
   const closeDetail = (event: React.MouseEvent) => {
     if (event.target === event.currentTarget) {
-      setShowID('')
+      setCurrentID('')
     }
   }
+
+  const workProductItems = worksProduct.map((workProductItem) =>
+    <WorkBox key={workProductItem.id} dataSet={workProductItem} setShowIDNum={setShowIDNum} />
+  )
+
+  const workHobbyItems = worksHobby.map((workHobbyItem) => 
+    <WorkBox key={workHobbyItem.id} dataSet={workHobbyItem} setShowIDNum={setShowIDNum} />
+  )
+
+  const workDetailItems = worksProduct.map((workDetailItem) =>
+    <WorkDetail key={workDetailItem.id} currentID={currentID} dataSet={workDetailItem} closeDetail={closeDetail}/>
+  )
+
+  // const workDetail
 
   return(
     <>
       <NavBar />
-      {showDetail(showID)}
+      {/* {showDetail(currentID)} */}
+      {workDetailItems}
+      {/* <WorkDetail id={showID} closeDetail={closeDetail}/> */}
       <StyledContents>
         <h1>Works</h1>
         <ul><li><h2>Products</h2></li></ul>
-        <StyledBox>
-          <CyansHP id={'cyansHP'} setShowIDNum={setShowIDNum}/>
+        {/* <StyledBox>
+          <WorkBox id={'cyansHP'} setShowIDNum={setShowIDNum} />
           <ReactWorldWeather />
           <MoveItem />
           <Numer0nSearch />
-        </StyledBox>
+        </StyledBox> */}
+        <StyledBox>{workProductItems}</StyledBox>
         <ul><li><h2>Hobbies</h2></li></ul>
-        <StyledBox>
+        {/* <StyledBox>
           <Itookashi />
-          <Comp005 />
+          <WorkBox id={'Comp005'} setShowIDNum={setShowIDNum} />
           <Kizuna />
           <KaoruJuyoka />
-        </StyledBox>
+        </StyledBox> */}
+        <StyledBox>{workHobbyItems}</StyledBox>
       </StyledContents>
       <Footer />
     </>
