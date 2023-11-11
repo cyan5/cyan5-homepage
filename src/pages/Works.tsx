@@ -20,7 +20,7 @@ import WorkDetail from "../components/Works/WorkDetail";
 import WorkBox from "../components/Works/WorkBox";
 
 const Works = () => {
-  const [currentID, setCurrentID] = useState<string>('cyansHP')
+  const [currentID, setCurrentID] = useState<string>('')
 
   function setShowIDNum(id: string) {
     setCurrentID(id)

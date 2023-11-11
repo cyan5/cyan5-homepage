@@ -1,9 +1,9 @@
 // IconLink.tsx
 
 import { styled } from '@linaria/react'
-import src_GitHub from '../images/icon/github-mark.png'
-import src_Link from '../images/icon/hyperlink.png'
-import src_X from '../images/icon/xlogo-black_240p.png'
+import srcGitHub from '../images/icon/github-mark.png'
+import srcLink from '../images/icon/hyperlink.png'
+import srcX from '../images/icon/xlogo-black_240p.png'
 import srcYouTube from '../images/icon/yt_icon_rgb_240p.png'
 
 type IconLinkType = {
@@ -11,65 +11,51 @@ type IconLinkType = {
   link: string
 }
 
+interface iconDataKey {
+  [key: string]: {
+    text: string;
+    height: string;
+    alt: string
+    srcImage: string;
+  };
+}
+
+const iconData: iconDataKey = {
+  GitHub: {
+    text: "GitHub", 
+    height: "100%", 
+    alt: "icon_GitHub", 
+    srcImage: srcGitHub
+  }, 
+  Link: {
+    text: "Link", 
+    height: "100%", 
+    alt: "icon_Link", 
+    srcImage: srcLink
+  }, 
+  X: {
+    text: "X (旧Twitter)", 
+    height: "80%", 
+    alt: "icon_X", 
+    srcImage: srcX
+  }, 
+  YouTube: {
+    text: "YouTube", 
+    height: "80%", 
+    alt: "icon_YouTube", 
+    srcImage: srcYouTube
+  }
+}
+
 const IconLink = ({ shape, link }: IconLinkType) => {
-  const recIcon = () => {
-    if (shape === 'GitHub') {
-      return(
-        <>
-          <img src={src_GitHub} height='100%' alt='icon_GitHub'></img>
-        </>
-      )
-    } else if (shape === 'Link') {
-      return(
-        <>
-          <img src={src_Link} height='100%' alt='icon_Link'></img>
-        </>
-      )
-    } else if (shape === 'X') {
-      return(
-        <>
-          <img src={src_X} height='80%' alt='icon_X'></img>
-        </>
-      )
-    } else if (shape === 'YouTube') {
-      return(
-        <>
-          <img src={srcYouTube} height='80%' alt='icon_X'></img>
-        </>
-      )
-    }
-  }
-
-  const recText = () => {
-    if (shape === 'GitHub') {
-      return(
-        <>GitHub</>
-      )
-    } else if (shape === 'Link') {
-      return(
-        <>Link</>
-      )
-    } else if (shape === 'X') {
-      return(
-        <>X (旧Twitter)</>
-      )
-    } else if (shape === 'YouTube') {
-      return(
-        <>YouTube</>
-      )
-    }
-  }
-
   return(
     <>
       <StyledLi>
         <a href={link} target='_blank'>
           <div id='up'>
-            {recIcon()}
+            <img src={iconData[shape].srcImage} height={iconData[shape].height} alt={iconData[shape].alt}></img>
           </div>
-          <div id='down'>
-            {recText()}
-          </div>
+          <div id='down'>{iconData[shape].text}</div>
         </a>
       </StyledLi>
     </>
