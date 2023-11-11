@@ -4,6 +4,7 @@ import { styled } from '@linaria/react'
 import src_GitHub from '../images/icon/github-mark.png'
 import src_Link from '../images/icon/hyperlink.png'
 import src_X from '../images/icon/xlogo-black_240p.png'
+import srcYouTube from '../images/icon/yt_icon_rgb_240p.png'
 
 type IconLinkType = {
   shape: string
@@ -30,6 +31,12 @@ const IconLink = ({ shape, link }: IconLinkType) => {
           <img src={src_X} height='80%' alt='icon_X'></img>
         </>
       )
+    } else if (shape === 'YouTube') {
+      return(
+        <>
+          <img src={srcYouTube} height='80%' alt='icon_X'></img>
+        </>
+      )
     }
   }
 
@@ -45,6 +52,10 @@ const IconLink = ({ shape, link }: IconLinkType) => {
     } else if (shape === 'X') {
       return(
         <>X (旧Twitter)</>
+      )
+    } else if (shape === 'YouTube') {
+      return(
+        <>YouTube</>
       )
     }
   }
