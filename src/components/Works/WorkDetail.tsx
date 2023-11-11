@@ -112,7 +112,7 @@ const StyledUp = styled.div`
 
 const StyledDown = styled.div`
   position: relative;
-  padding: 0 3% 20px;
+  padding: 0 3% 2vh;
 
   h2 {
     text-align: center;

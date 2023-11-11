@@ -77,23 +77,26 @@ const IconLink = ({ shape, link }: IconLinkType) => {
 };
 
 const StyledLi = styled.li`
-  width: calc(60px + 5%);
+  width: calc(2% + 60px);
+  height: max-content;
   list-style: none;
   text-align: center;
-  margin: 1vh 0 2vh;
-  display: grid;
-  grid-template-rows: 50px;
-
+  margin-top: 1vh;
+  
   a {
+    display: grid;
+    grid-template-rows: 50px min-content;
+    height: auto;
     #up {
-      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     
     #down {
-      height: auto;
+      font-size: 10pt;
+      margin-top: 6px;
+      align-items: center
     }
   }
 `
