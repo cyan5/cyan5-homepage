@@ -18,7 +18,7 @@ const StyledTitle = styled.h1`
   margin: 2vh 0;
   text-decoration: underline;
   text-underline-offset: 13px;
-  filter: drop-shadow(1px 1px 1.3px #eeeeee);
+  filter: drop-shadow(1px 1px 1.3px #bbbbbb);
 `
 
 export default Title;

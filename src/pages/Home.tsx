@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { StyledContents } from '../styles/StyledContents'
 import srcFuji from "../images/DSC_0050.jpg"
 import Title from '../components/Title'
+import SectionLink from '../components/SectionLink'
 
 const Home = () => {
   return (
@@ -11,10 +12,8 @@ const Home = () => {
       <NavBar />
       <StyledContents>
         <Title text="cyan's Homepage"/>
-        <ul>
-          <li><h2><Link to='About'>About</Link></h2></li>
-          <li><h2><Link to='Works'>Works</Link></h2></li>
-        </ul>
+        <SectionLink text="About" link="about" />
+        <SectionLink text="Works" link="works" />
       </StyledContents>
     </StyledHome>
   )

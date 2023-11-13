@@ -9,6 +9,7 @@ import { workProducts, workHobbies } from "../components/Works/WorksData";
 import WorkDetail from "../components/Works/WorkDetail";
 import WorkBox from "../components/Works/WorkBox";
 import Title from "../components/Title";
+import Section from "../components/Section";
 
 const Works = () => {
   const [currentID, setCurrentID] = useState<string>('')
@@ -46,9 +47,9 @@ const Works = () => {
       {workHobbyDetails}
       <StyledContents>
         <Title text="Works"/>
-        <ul><li><h2>Products</h2></li></ul>
+        <Section text="Products" />
         <StyledBox>{workProductBoxes}</StyledBox>
-        <ul><li><h2>Hobbies</h2></li></ul>
+        <Section text="Hobbies" />
         <StyledBox>{workHobbyBoxes}</StyledBox>
       </StyledContents>
       <Footer />

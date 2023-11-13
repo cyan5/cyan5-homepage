@@ -9,6 +9,7 @@ import src_Cyan from '../images/cyan.png'
 import { StyledIconLeft } from "../styles/StyledIconLeft";
 import IconLink from "../components/IconLink";
 import Title from "../components/Title";
+import Section from "../components/Section";
 
 const About = () => {
   return(
@@ -21,7 +22,7 @@ const About = () => {
           <img src={src_Cyan} alt='cyan.png'/>
         </StyledImg>
         <StyledH2>シアン / cyan</StyledH2>
-        <ul><li><h2>Outline</h2></li></ul>
+        <Section text="Outline" />
 
         <p>
           バックエンド志望で現在はGoの学習をしていますが、フロント、SE、スマホアプリ、機械学習など幅広く興味があります。
@@ -30,7 +31,7 @@ const About = () => {
           音楽が趣味で、ピアノを弾いたり、パソコンで音楽を編集したりしています。
         </p>
 
-        <ul><li><h2>Skills</h2></li></ul>
+        <Section text="Skills" />
 
         <ul>
           <li>C/C++</li>
@@ -41,7 +42,7 @@ const About = () => {
           <li>(MySQL)</li>
         </ul>
 
-        <ul><li><h2>Career</h2></li></ul>
+        <Section text="Carrer" />
 
         <p id='noindent'>
           2019年4月 東京工業大学 情報理工学院 入学<br/>
@@ -50,7 +51,7 @@ const About = () => {
           {/* 2025年3月 東京科学大学大学院 情報工学系 知能情報コース(仮称) 卒業見込み */}
         </p>
 
-        <ul><li><h2>Links</h2></li></ul>
+        <Section text="Links" />
 
         <StyledIconLeft>
           <IconLink key={0} shape='X' link={'https://twitter.com/r_vanis'} />
