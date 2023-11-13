@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/Home.tsx'
-// import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { css } from '@linaria/core'
+import Home from './pages/Home.tsx'
 import Works from './pages/Works.tsx'
 import NotFound from './pages/NotFound.tsx'
 import About from './pages/About.tsx'
@@ -12,10 +11,10 @@ export const globals = css`
   :global() {
     html {
       box-sizing: border-box;
-      /* height:100%; */
     }
     
     body {
+      font-family: 'M PLUS Rounded 1c', 'MaterialIcons', sans-serif;
       margin: 0;
       padding: 0;
       height:100%;
@@ -27,8 +26,10 @@ export const globals = css`
       box-sizing: inherit;
     }
 
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
     @font-face {
-      font-family: 'MaterialIcons';
+      font-family: 'M PLUS Rounded 1c', 'MaterialIcons', sans-serif;
       src: url(../assets/fonts/MaterialIcons.ttf) format('truetype');
     }
   }
@@ -37,6 +38,7 @@ export const globals = css`
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
+
       <Routes>
         <Route path="/cyan5-homepage/" element={<Home />} />
         <Route path="/cyan5-homepage/about" element={<About />} />

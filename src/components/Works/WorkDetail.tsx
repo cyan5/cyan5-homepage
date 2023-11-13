@@ -168,7 +168,8 @@ const StyledDown = styled.div`
   }
 `
 
-const StyledDel = styled.div `
+const StyledDel = styled.div`
+  font-family: 'MaterialIcons';
   text-shadow: 0px 1px 1px white, 0px -1px 1px white, 1px 0px 1px white, -1px 0px 1px white;
 `
 

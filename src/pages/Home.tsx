@@ -1,6 +1,5 @@
 import { styled } from '@linaria/react'
 import NavBar from '../components/NavBar'
-import { Link } from 'react-router-dom'
 import { StyledContents } from '../styles/StyledContents'
 import srcFuji from "../images/DSC_0050.jpg"
 import Title from '../components/Title'

@@ -7,6 +7,7 @@ export const StyledContents = styled.div`
   margin: auto;
 
   p {
+    font-family: 'Raleway';
     padding-left: 45px;
     text-indent: 1rem;
   }
