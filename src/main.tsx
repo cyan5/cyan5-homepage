@@ -39,8 +39,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/cyan5-homepage/" element={<Home />} />
-        <Route path="/cyan5-homepage/About" element={<About />} />
-        <Route path="/cyan5-homepage/Works" element={<Works />} />
+        <Route path="/cyan5-homepage/about" element={<About />} />
+        <Route path="/cyan5-homepage/works" element={<Works />} />
         <Route path="/cyan5-homepage/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
