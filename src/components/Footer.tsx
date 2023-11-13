@@ -26,7 +26,6 @@ const StyledFooter = styled.footer`
 
   div{
     max-width: 1000px;
-    height: 10vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
