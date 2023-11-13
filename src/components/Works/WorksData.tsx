@@ -18,7 +18,7 @@ export const workProducts = [
   {
     id: "cyansHP", 
     title: "cyan's Homepage", 
-    date: "2023.11.13", 
+    date: "2023.11.14", 
     srcImage: srcFuji, 
     tags: [
       "TypeScript + React", 

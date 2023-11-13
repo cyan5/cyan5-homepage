@@ -122,7 +122,7 @@ const StyledUp = styled.div`
 
 const StyledDown = styled.div`
   position: relative;
-  padding: 2% 8% 3%;
+  padding: 2% 8%;
 
   h2 {
     text-align: center;
@@ -144,7 +144,7 @@ const StyledDown = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.2vh 3%;
+    padding: 2% 5%;
   }
 
   #tags {
