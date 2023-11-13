@@ -1,24 +1,21 @@
-// import './Home.css'
 import { styled } from '@linaria/react'
 import NavBar from '../components/NavBar'
 import { Link } from 'react-router-dom'
 import { StyledContents } from '../styles/StyledContents'
 import srcFuji from "../images/DSC_0050.jpg"
+import Title from '../components/Title'
 
 const Home = () => {
   return (
     <StyledHome>
       <NavBar />
-      {/* <BigIcon /> */}
-      {/* <Cover /> */}
       <StyledContents>
-        <h1>cyan's Homepage</h1>
+        <Title text="cyan's Homepage"/>
         <ul>
           <li><h2><Link to='About'>About</Link></h2></li>
           <li><h2><Link to='Works'>Works</Link></h2></li>
         </ul>
       </StyledContents>
-      {/* <Footer /> */}
     </StyledHome>
   )
 }

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { workProducts, workHobbies } from "../components/Works/WorksData";
 import WorkDetail from "../components/Works/WorkDetail";
 import WorkBox from "../components/Works/WorkBox";
+import Title from "../components/Title";
 
 const Works = () => {
   const [currentID, setCurrentID] = useState<string>('')
@@ -44,7 +45,7 @@ const Works = () => {
       {workProductDetails}
       {workHobbyDetails}
       <StyledContents>
-        <h1>Works</h1>
+        <Title text="Works"/>
         <ul><li><h2>Products</h2></li></ul>
         <StyledBox>{workProductBoxes}</StyledBox>
         <ul><li><h2>Hobbies</h2></li></ul>

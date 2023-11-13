@@ -8,6 +8,7 @@ import { StyledContents } from "../styles/StyledContents";
 import src_Cyan from '../images/cyan.png'
 import { StyledIconLeft } from "../styles/StyledIconLeft";
 import IconLink from "../components/IconLink";
+import Title from "../components/Title";
 
 const About = () => {
   return(
@@ -15,7 +16,7 @@ const About = () => {
       <NavBar />
       <Cover />
       <StyledContents>
-        <h1>About</h1>
+        <Title text="About"/>
         <StyledImg>
           <img src={src_Cyan} alt='cyan.png'/>
         </StyledImg>
