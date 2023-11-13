@@ -2,8 +2,8 @@ import { styled } from "@linaria/react"
 
 export const StyledContents = styled.div`
   max-width: 1000px;
-  padding: 6vh calc(15px + 1vw);
-  padding: auto;
+  padding: calc(30px + 1vh) calc(15px + 1vw);
+  /* padding: auto; */
   margin: auto;
 
   p {

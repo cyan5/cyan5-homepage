@@ -70,11 +70,11 @@ const IconLink = ({ shape, link }: IconLinkType) => {
 };
 
 const StyledLi = styled.li`
-  width: calc(2% + 60px);
-  height: max-content;
+  width: 83px;
+  /* height: min-content; */
+  height: auto;
   list-style: none;
   text-align: center;
-  margin-top: 1vh;
   
   a {
     display: grid;
@@ -84,11 +84,12 @@ const StyledLi = styled.li`
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 3px 0;
     }
     
     #down {
       font-size: 10pt;
-      margin-top: 6px;
+      margin: 3px 0;
       align-items: center
     }
   }

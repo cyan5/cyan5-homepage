@@ -21,12 +21,11 @@ const backToTop = () => {
 };
 
 const StyledFooter = styled.footer`
-  height: 10vh;
+  height: calc(50px + 2vh);
   background: #1f353d;
-  /* margin: 0; */
 
   div{
-    max-width: 728px;
+    max-width: 1000px;
     height: 10vh;
     margin-left: auto;
     margin-right: auto;

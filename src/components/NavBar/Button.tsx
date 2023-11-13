@@ -12,27 +12,32 @@ const Button = ({ text, link }: ButtonTextType) => {
   return(
     <Link to={link}>
       <StyledButton>
-        {text}
+        <div>
+          {text}
+        </div>
       </StyledButton>
     </Link>
   );
 };
 
 const StyledButton = styled.div`
+  height: calc(30px + 1vh);
   background: transparent;
-  color: white;
-  text-align: center;
-  text-shadow: rgba(0,0,0,1) 0 0 6px;
-  height: 6vh;
-  line-height: 6vh;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: block;
-  float: left;
+  padding: 0 20px;
   cursor: pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 
-  :hover {
-    color: white;
+  div {
+    color: #cccccc;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-shadow: rgba(0,0,0,1) 0 0 6px;
+
+    :hover {
+      color: white;
+    }
   }
 `
 
