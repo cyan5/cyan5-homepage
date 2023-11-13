@@ -6,7 +6,7 @@ const Footer = () => {
   return(
     <StyledFooter>
       <div>
-        <button onClick={() => backToTop()}>Back to Page Top</button>
+        <div onClick={() => backToTop()}>Back to Page Top</div>
         <p>This Website is produced by cyan.</p>
       </div>
     </StyledFooter>
@@ -23,22 +23,19 @@ const backToTop = () => {
 const StyledFooter = styled.footer`
   height: calc(50px + 2vh);
   background: #1f353d;
-
+  
   div{
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
+    margin: auto;
     position: relative;
     
-    button {
-      position: absolute;
-      top: 1em;
-      left: 50%;
-      transform: translate(-50%, 0%);
+    div {
+      width: fit-content;
+      padding: 8px;
+      margin: auto;
       font-size: 10pt;
       color: #cfcfcf;
-      text-align: center;
-      border: none;
       background: transparent;
       cursor: pointer;
     }
@@ -47,11 +44,11 @@ const StyledFooter = styled.footer`
       position: absolute;
       right: 0;
       bottom: 0;
+      padding: 0;
+      margin: 4px;
       font-size: 8pt;
       text-align: right;
       color: #6f6f6f;
-      margin: 0;
-      margin-bottom: 1em;
     }
   }
 `

@@ -15,7 +15,7 @@ const StyledCover = styled.div`
   background-image: url(${srcFuji});
   background-size: cover;
   background-position: center;
-  height: 25vh;
+  height: 40vh;
   padding: 0; 
   margin: 10 20 30 40;
   /* background: #007070; */

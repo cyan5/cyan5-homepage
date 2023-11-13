@@ -32,7 +32,7 @@ export const workProducts = [
   }, 
   {
     id: "ReactWorldWeather", 
-    title: "ReactWorldWeather", 
+    title: "React World Weather", 
     date: "2023.10.19", 
     srcImage: srcWorldWeather, 
     tags: [
@@ -47,7 +47,7 @@ export const workProducts = [
   }, 
   {
     id: "numer0nSearch", 
-    title: "numer0n-search", 
+    title: "numer0n search", 
     date: "2023.10.20", 
     srcImage: srcNumer0nSearch, 
     tags: [
