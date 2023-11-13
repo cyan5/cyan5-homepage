@@ -26,7 +26,7 @@ export const workProducts = [
     ], 
     outline: <>当ウェブサイトでありWebアプリ2作品目。成果物や趣味がわかりやすく見られるサイトを作成。CSS-in-JSには、ゼロランタイムで高速なLinariaを採用。すべての作品情報を1つのファイルで管理し、今後の作品の追加がしやすくなるよう設計。</>, 
     links: [
-      {shape: "Link", link: "http://localhost:5173/cyan5-homepage"}, 
+      {shape: "Link", link: "https://cyan5.github.io/cyan5-homepage/"}, 
       {shape: "GitHub", link: "https://github.com/cyan5/cyan5-homepage"}
     ]
   }, 
