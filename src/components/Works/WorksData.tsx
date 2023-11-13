@@ -18,13 +18,13 @@ export const workProducts = [
   {
     id: "cyansHP", 
     title: "cyan's Homepage", 
-    date: "2023.11.11", 
+    date: "2023.11.13", 
     srcImage: srcFuji, 
     tags: [
       "TypeScript + React", 
       "WebApp"
     ], 
-    outline: <>当ウェブサイトでありWebアプリ2作品目。成果物や趣味がわかりやすく見られるサイトを作成。CSS-in-JSには、ゼロランタイムで高速なLinariaを採用。すべての作品情報を1つのファイルで管理し、今後の作品の追加がしやすくなるよう設計した。</>, 
+    outline: <>当ウェブサイトでありWebアプリ2作品目。成果物や趣味がわかりやすく見られるサイトを作成。CSS-in-JSには、ゼロランタイムで高速なLinariaを採用。すべての作品情報を1つのファイルで管理し、今後の作品の追加がしやすくなるよう設計。</>, 
     links: [
       {shape: "Link", link: "http://localhost:5173/cyan5-homepage"}, 
       {shape: "GitHub", link: "https://github.com/cyan5/cyan5-homepage"}
@@ -65,10 +65,9 @@ export const workProducts = [
     date: "2023.09.18", 
     srcImage: srcMoveItem, 
     tags: [
-      "Powershell", 
-      "Shell Script"
+      "Windows PowerShell", 
     ], 
-    outline: <>Powershellスクリプト。フォルダ内の写真・動画を、日付情報をもとに仕分けする。スクリプトをタスクスケジューラに設定し、PCをNAS化することで簡易ファイルサーバとして運用することができる。</>, 
+    outline: <>Powershellスクリプト。フォルダ内の写真・動画を、写真に紐づいている日付情報をもとに仕分けする。NAS化したWindowsPCでスクリプトを自動実行させることにより、写真整理を行う自宅サーバ環境を構築できる。</>, 
     links: [
       {shape: "GitHub", link: "https://github.com/cyan5/MoveItem"}, 
     ]
@@ -100,7 +99,7 @@ export const workHobbies = [
       "DTM", 
       "耳コピ"
     ], 
-    outline: <>SMILE PRINCESSの『いとおかし』を耳コピした動画。本家の音を再現することに全力を注いだ。DTMソフトは「Studio One 4 Professional」、動画は「See Music」で作成。</>, 
+    outline: <>SMILE PRINCESSの『いとおかし』を再現することに全力を注いだ動画。DTMソフトは「Studio One 4 Professional」、動画は「See Music」で作成。</>, 
     links: [
       {shape: "YouTube", link: "https://youtu.be/uFgq1KMJmyQ"}, 
     ]
@@ -114,7 +113,7 @@ export const workHobbies = [
       "DTM", 
       "作曲"
     ], 
-    outline: <>自作曲の5作品目。和音進行の理論を独学で習得し、複雑なコード進行を取り入れた。DTMソフトは「Studio One 4 Professional」、動画は「Midi Trail」で作成。</>, 
+    outline: <>自作曲の5作品目。コード理論を独学で身につけ、複雑なコード進行を取り入れた。DTMソフトは「Studio One 4 Professional」、動画は「Midi Trail」で作成。</>, 
     links: [
       {shape: "YouTube", link: "https://youtu.be/vH4BiIXQWoE"}, 
     ]
@@ -127,7 +126,7 @@ export const workHobbies = [
     tags: [
       "動画制作", 
     ], 
-    outline: <>Google Chrome CMのキズナアイ版を作成。<a href="https://youtu.be/MGt25mv4-2Q" target="_blank">Google Chrome : Hatsune Miku (初音ミク) </a>のパロティ。動画編集ソフト「AviUtl」で作成。</>, 
+    outline: <>Google Chrome CMのキズナアイ版を作成。<a href="https://youtu.be/MGt25mv4-2Q" target="_blank">本家 (初音ミク版) </a>のパロディ。動画編集ソフト「AviUtl」で作成。</>, 
     links: [
       {shape: "YouTube", link: "https://youtu.be/Q3QSO41ux10"}, 
       {shape: "niconico", link: "https://www.nicovideo.jp/watch/sm33443279"}
