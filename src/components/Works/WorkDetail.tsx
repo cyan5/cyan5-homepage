@@ -72,7 +72,7 @@ const StyledWorkDetail = styled.div`
 const StyledWorkBody = styled.div`  
   width: 840px;
   @media only screen and (max-width: 1050px) {
-    width: 80vw;
+    width: 92vw;
   }
   height: 672px;
   @media only screen and (max-height: 700px) {
