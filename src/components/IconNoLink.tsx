@@ -19,7 +19,7 @@ import srcR from "../images/skills/r-original.svg"
 import srcReact from "../images/skills/react-original.svg"
 import srcRust from "../images/skills/rust-plain.svg"
 import srcTS from "../images/skills/typescript-original.svg"
-import srcVite from "../../public/vite.svg"
+import srcVite from "../assets/react.svg"
 import srcUbuntu from "../images/skills/ubuntu-plain.svg"
 // import src from "../images/skills"
 
