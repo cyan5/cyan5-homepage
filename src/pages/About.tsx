@@ -10,6 +10,7 @@ import { StyledIconLeft } from "../styles/StyledIconLeft";
 import IconLink from "../components/IconLink";
 import Title from "../components/Title";
 import Section from "../components/Section";
+import IconNoLink from "../components/IconNoLink";
 
 const About = () => {
   return(
@@ -33,14 +34,34 @@ const About = () => {
 
         <Section text="Skills" />
 
-        <ul>
-          <li>C/C++</li>
-          <li>Python</li>
-          <li>TypeScript + React</li>
-          <li>(Go)</li>
-          <li>(Rust)</li>
-          <li>(MySQL)</li>
-        </ul>
+        <h4>オリジナルの成果物を作成できる</h4>
+        <StyledIconLeft>
+          <IconNoLink shape="C"/>
+          <IconNoLink shape="Python"/>
+          {/* <IconNoLink shape="JS"/> */}
+          <IconNoLink shape="TS"/>
+          <IconNoLink shape="React"/>
+          {/* <IconNoLink shape="Vite"/> */}
+          <IconNoLink shape="Nodejs"/>
+          {/* <IconNoLink shape="HTML"/> */}
+          {/* <IconNoLink shape="CSS"/> */}
+          {/* <IconNoLink shape="Ubuntu"/> */}
+        </StyledIconLeft>
+        <h4>学習中または学習予定</h4>
+        <StyledIconLeft>
+          <IconNoLink shape="CPP"/>
+          <IconNoLink shape="Go"/>
+          <IconNoLink shape="Rust"/>
+          <IconNoLink shape="Kotlin"/>
+          <IconNoLink shape="PyTorch"/>
+        </StyledIconLeft>
+        <h4>使用したことがある</h4>
+        <StyledIconLeft>
+          <IconNoLink shape="Figma"/>
+          <IconNoLink shape="Java"/>
+          <IconNoLink shape="R"/>
+          <IconNoLink shape="MATLAB"/>
+        </StyledIconLeft>
 
         <Section text="Carrer" />
 
@@ -54,8 +75,8 @@ const About = () => {
         <Section text="Links" />
 
         <StyledIconLeft>
-          <IconLink key={0} shape='X' link={'https://twitter.com/r_vanis'} />
-          <IconLink key={1} shape='GitHub' link={'https://github.com/cyan5'} />
+          <IconLink shape='GitHub' link={'https://github.com/cyan5'} />
+          <IconLink shape='X' link={'https://twitter.com/r_vanis'} />
         </StyledIconLeft>
 
       </StyledContents>

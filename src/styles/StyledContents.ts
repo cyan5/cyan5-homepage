@@ -11,6 +11,14 @@ export const StyledContents = styled.div`
     text-indent: 1rem;
   }
 
+  h4 {
+    color: #555555;
+    padding: 0;
+    margin: 8px 0 8px 30px;
+    text-decoration: underline;
+
+  }
+
   #noindent {
     text-indent: 0;
   }
