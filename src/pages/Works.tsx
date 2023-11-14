@@ -10,6 +10,7 @@ import WorkDetail from "../components/Works/WorkDetail";
 import WorkBox from "../components/Works/WorkBox";
 import Title from "../components/Title";
 import Section from "../components/Section";
+import Cover from "../components/Cover";
 
 const Works = () => {
   const [currentID, setCurrentID] = useState<string>('')
@@ -43,6 +44,7 @@ const Works = () => {
   return(
     <>
       <NavBar />
+      <Cover />
       {workProductDetails}
       {workHobbyDetails}
       <StyledContents>
