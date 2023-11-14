@@ -70,8 +70,8 @@ const StyledWorkDetail = styled.div`
 `
 
 const StyledWorkBody = styled.div`  
-  width: 840px;
-  @media only screen and (max-width: 1050px) {
+  width: 828px;
+  @media only screen and (max-width: 900px) {
     width: 92vw;
   }
   height: 672px;
@@ -87,7 +87,7 @@ const StyledWorkBody = styled.div`
   border-style: solid;
   border-color: rgb(160,160,160);
   display: grid;
-  grid-template-rows: minmax(20vh, auto) min-content;
+  grid-template-rows: minmax(15vh, auto) min-content;
 `
 
 const StyledUp = styled.div`

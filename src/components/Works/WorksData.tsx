@@ -14,17 +14,21 @@ const Red = styled.span`
   color: red;
 `
 
+const KizunaAI = styled.span`
+  color: pink;
+`
+
 export const workProducts = [
   {
     id: "cyansHP", 
     title: "cyan's Homepage", 
-    date: "2023.11.14", 
+    date: "2023.11.15", 
     srcImage: srcFuji, 
     tags: [
       "TypeScript + React", 
       "WebApp"
     ], 
-    outline: <>当ウェブサイトでありWebアプリ2作品目。成果物や趣味がわかりやすく見られるサイトを作成。CSS-in-JSには、ゼロランタイムで高速なLinariaを採用。すべての作品情報を1つのファイルで管理し、今後の作品の追加がしやすくなるよう設計。</>, 
+    outline: <>当ウェブサイトでありWebアプリ2作品目。成果物や趣味がわかりやすく見られるサイトを作成。CSS-in-JSにはゼロランタイムであるLinariaを採用。すべての作品情報を1つのファイルで管理し、今後の作品の追加がしやすくなるよう設計。</>, 
     links: [
       {shape: "Link", link: "https://cyan5.github.io/cyan5-homepage/"}, 
       {shape: "GitHub", link: "https://github.com/cyan5/cyan5-homepage"}
@@ -39,7 +43,7 @@ export const workProducts = [
       "TypeScript + React", 
       "WebApp", 
     ], 
-    outline: <><a href="https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%A4%E3%81%8F%E3%82%8BReact%E3%82%A2%E3%83%97%E3%83%AA-TypeScript-mod728-ebook/dp/B094Z1R281" target="_blank">参考書</a>をもとに作成した最初のWebアプリケーション。参考書のPure CSSをモダンなStyled-Componentに変更し、他にも細かな機能を追加した。<Red>GitHub PagesではAPIキーを隠しているので天気の表示ができない。</Red></>, 
+    outline: <><a href="https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%A4%E3%81%8F%E3%82%8BReact%E3%82%A2%E3%83%97%E3%83%AA-TypeScript-mod728-ebook/dp/B094Z1R281" target="_blank">参考書</a>をもとに作成した最初のWebアプリケーション。参考書のPure CSSをモダンなStyled-Componentに変更し、他にも細かな機能を追加した。<Red>GitHub Pages版では天気の表示ができない。</Red></>, 
     links: [
       {shape: "Link", link: "https://cyan5.github.io/react-world-weather/"}, 
       {shape: "GitHub", link: "https://github.com/cyan5/react-world-weather"}
@@ -67,7 +71,7 @@ export const workProducts = [
     tags: [
       "Windows PowerShell", 
     ], 
-    outline: <>Powershellスクリプト。フォルダ内の写真・動画を、写真に紐づいている日付情報をもとに仕分けする。NAS化したWindowsPCでスクリプトを自動実行させることにより、写真整理を行う自宅サーバ環境を構築できる。</>, 
+    outline: <>Windows PowerShellスクリプト。フォルダ内の写真・動画を、写真に紐づいている日付情報をもとに仕分けする。</>, 
     links: [
       {shape: "GitHub", link: "https://github.com/cyan5/MoveItem"}, 
     ]
@@ -126,7 +130,7 @@ export const workHobbies = [
     tags: [
       "動画制作", 
     ], 
-    outline: <>Google Chrome CMのキズナアイ版を作成。<a href="https://youtu.be/MGt25mv4-2Q" target="_blank">本家 (初音ミク版) </a>のパロディ。動画編集ソフト「AviUtl」で作成。</>, 
+    outline: <>Google Chrome CMのキズナアイ版を作成。<a href="https://youtu.be/MGt25mv4-2Q" target="_blank">本家 (初音ミク版) </a>のパロディ。動画編集ソフト「AviUtl」で作成。<KizunaAI>©︎Kizuna AI</KizunaAI></>, 
     links: [
       {shape: "YouTube", link: "https://youtu.be/Q3QSO41ux10"}, 
       {shape: "niconico", link: "https://www.nicovideo.jp/watch/sm33443279"}
