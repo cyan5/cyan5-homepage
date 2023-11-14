@@ -25,10 +25,10 @@ const About = () => {
         <Section text="Outline" />
 
         <p>
-          バックエンドエンジニア志望で現在はGoの学習をしていますが、他にもフロント、SE、スマホアプリ、機械学習など幅広く興味があります。
+          バックエンド開発のため、現在はGo言語の学習をしています。他にもフロント、システム、スマホアプリ、機械学習などの分野に幅広く興味があります。
         </p>
         <p>
-          音楽が趣味で、ピアノを弾いたり、パソコンで音楽を編集したりしています。
+          音楽が大好きで、パソコンで音楽を編集したり、ピアノを弾いたりするのが趣味です。
         </p>
 
         <Section text="Skills" />
@@ -66,10 +66,10 @@ const About = () => {
 
 const StyledImg = styled.div`
   background: cyan;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 1px;
-  margin: auto;
+  margin: 20px auto;
   border-style: solid;
   border-color: black;
   border-radius: 50%;
@@ -85,7 +85,6 @@ const StyledImg = styled.div`
 const StyledH2 = styled.div`
   font-size: 20pt;
   text-align: center;
-  margin-top: 10px;
 `
 
 export default About;
