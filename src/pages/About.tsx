@@ -11,6 +11,7 @@ import IconLink from "../components/IconLink";
 import Title from "../components/Title";
 import Section from "../components/Section";
 import IconNoLink from "../components/IconNoLink";
+import SubSubSection from "../components/SubSubSection";
 
 const About = () => {
   return(
@@ -34,7 +35,7 @@ const About = () => {
 
         <Section text="Skills" />
 
-        <h4>オリジナルの成果物を作成できる</h4>
+        <SubSubSection text="オリジナルの成果物を作成できる" />
         <StyledIconLeft>
           <IconNoLink shape="C"/>
           <IconNoLink shape="Python"/>
@@ -47,7 +48,7 @@ const About = () => {
           {/* <IconNoLink shape="CSS"/> */}
           {/* <IconNoLink shape="Ubuntu"/> */}
         </StyledIconLeft>
-        <h4>学習中または学習予定</h4>
+        <SubSubSection text="学習中または学習予定" />
         <StyledIconLeft>
           <IconNoLink shape="CPP"/>
           <IconNoLink shape="Go"/>
@@ -55,7 +56,7 @@ const About = () => {
           <IconNoLink shape="Kotlin"/>
           <IconNoLink shape="PyTorch"/>
         </StyledIconLeft>
-        <h4>使用したことがある</h4>
+        <SubSubSection text="使用したことがある" />
         <StyledIconLeft>
           <IconNoLink shape="Figma"/>
           <IconNoLink shape="Java"/>
