@@ -27,7 +27,7 @@ const About = () => {
         <Section text="Outline" />
 
         <p>
-          バックエンド開発のため、現在はGo言語の学習をしています。他にもフロント、システム、スマホアプリ、機械学習など幅広い分野に興味があります。
+          Webフロント、PCアプリ、機械学習など幅広い分野に興味があります。
         </p>
         <p>
           音楽が大好きで、パソコンで音楽を編集したり、ピアノを弾いたりするのが趣味です。
@@ -51,17 +51,17 @@ const About = () => {
         <SubSubSection text="学習中または学習予定" />
         <StyledIconLeft>
           <IconNoLink shape="CPP"/>
+          <IconNoLink shape="Java"/>
+          <IconNoLink shape="PyTorch"/>
           <IconNoLink shape="Go"/>
           <IconNoLink shape="Rust"/>
-          <IconNoLink shape="Kotlin"/>
-          <IconNoLink shape="PyTorch"/>
+          {/* <IconNoLink shape="Kotlin"/> */}
         </StyledIconLeft>
         <SubSubSection text="使用したことがある" />
         <StyledIconLeft>
-          <IconNoLink shape="Figma"/>
-          <IconNoLink shape="Java"/>
           <IconNoLink shape="R"/>
           <IconNoLink shape="MATLAB"/>
+          <IconNoLink shape="Figma"/>
         </StyledIconLeft>
 
         <Section text="Carrer" />
@@ -69,15 +69,15 @@ const About = () => {
         <p id='noindent'>
           2019年4月 東京工業大学 情報理工学院 入学<br/>
           2023年3月 東京工業大学 情報理工学院 情報工学系 卒業<br/>
-          2023年4月 東京工業大学大学院 情報工学系 知能情報コース 入学<br/>
-          {/* 2025年3月 東京科学大学大学院 情報工学系 知能情報コース(仮称) 卒業見込み */}
+          2023年4月 東京工業大学大学院 情報理工学院 情報工学系 知能情報コース 入学<br/>
+          2025年3月 東京科学大学大学院 情報理工学院 情報工学系 知能情報コース 卒業
         </p>
 
         <Section text="Links" />
 
         <StyledIconLeft>
           <IconLink shape='GitHub' link={'https://github.com/cyan5'} />
-          <IconLink shape='X' link={'https://twitter.com/r_vanis'} />
+          <IconLink shape='X' link={'https://x.com/cyan_005'} />
         </StyledIconLeft>
 
       </StyledContents>
