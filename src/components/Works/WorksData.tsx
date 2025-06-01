@@ -5,6 +5,7 @@ import srcWorldWeather from "../../images/reactworldweather.png"
 import srcNumer0nSearch from "../../images/numer0nsearch.png"
 import srcMoveItem from "../../images/moveitem.png"
 
+import srcLinaria from "../../images/linariathumb.png"
 import srcItookashi from "../../images/thumbnail2.png"
 import srcComp005 from "../../images/comp005.png"
 import srcKizuna from "../../images/kizuna_thunbnail.png"
@@ -94,6 +95,20 @@ export const workProducts = [
 ]
 
 export const workHobbies = [
+  {
+    id: "Linaria",
+    title: "『Linaria Girl』耳コピ", 
+    date: "2024.04.28", 
+    srcImage: srcLinaria, 
+    tags: [
+      "DTM", 
+      "耳コピ"
+    ], 
+    outline: <>鹿乃の『Lianria Girl』を再現することに全力を注いだ動画。DTMソフトは「Studio One 4 Professional」、動画は「See Music」で作成。</>, 
+    links: [
+      {shape: "YouTube", link: "https://youtu.be/jDJooAKnCVY"}, 
+    ]
+  }, 
   {
     id: "Itookashi", 
     title: "『いとおかし』耳コピ", 
